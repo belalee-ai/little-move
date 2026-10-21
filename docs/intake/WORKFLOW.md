@@ -59,3 +59,7 @@ node scripts/refresh-project-intro.mjs
 已有入口包括 `check-motion.mjs`、`check-studies.mjs`、`check-data.mjs`、`check-expansion.mjs`、`check-batch.mjs`、`check-verification.mjs`、`check-voice-ui.mjs`、`check-coverage-quality.mjs`、`check-original-quality.mjs`；按变更范围选用。阶段渲染脚本也按对应模块选择，不能把旧脚本的覆盖范围当成新增项已验证。
 
 发布前保留本轮验证记录，提交前检查差异和素材范围。公开文档不包含私人路径或个人素材；`proof/` 为本地检查目录，必要的公开验证摘要另写入 docs。网站发布仍由现有 GitHub Actions → GitHub Pages 执行；Codex 定时任务负责发现、制作、验收和触发这条发布链。
+
+## GitHub 动态展示的维护
+
+首页动态总览与 12 个代表性循环位于 `docs/previews/`，编号和媒体规格见 `manifest.json`，画廊见 [GALLERY.md](../GALLERY.md)。修改画廊所选组件或默认样式时，运行 `node scripts/render-readme-previews.mjs` 重新生成并查看实际 GIF；只重新编码时使用 `--encode-only`。未涉及展示示例的新增无需重渲染全部画廊。动图由现有组件渲染，不另外实现演示动作；原 MP4 留在本地 proof/readme/，不随源码提交。发布后检查 GitHub 实际加载与播放，不能只检查 GIF 文件存在。

@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-10-21T12:59:13.202Z",
+  "source": "Existing Little Move components and current defaults; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
+  "previews": [
+    {
+      "code": "008",
+      "name": "停顿打字",
+      "file": "typing.gif",
+      "composition": "NaturalTyping",
+      "durationSeconds": 6.233333,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 170560
+    },
+    {
+      "code": "022",
+      "name": "霓虹呼吸",
+      "file": "neon.gif",
+      "composition": "NeonText",
+      "durationSeconds": 6,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 3031017
+    },
+    {
+      "code": "035",
+      "name": "字标重组",
+      "file": "wordmark.gif",
+      "composition": "Study035",
+      "durationSeconds": 6,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 371299
+    },
+    {
+      "code": "048",
+      "name": "图片开窗",
+      "file": "image-reveal.gif",
+      "composition": "Demo048",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 3564312
+    },
+    {
+      "code": "053",
+      "name": "便当格展开",
+      "file": "bento.gif",
+      "composition": "Demo053",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 503077
+    },
+    {
+      "code": "069",
+      "name": "按钮按压",
+      "file": "button.gif",
+      "composition": "Demo069",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 112080
+    },
+    {
+      "code": "072",
+      "name": "滑块标签页",
+      "file": "tabs.gif",
+      "composition": "Demo072",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 257544
+    },
+    {
+      "code": "073",
+      "name": "数字滚动",
+      "file": "counter.gif",
+      "composition": "Demo073",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 745941
+    },
+    {
+      "code": "075",
+      "name": "折线追踪",
+      "file": "chart.gif",
+      "composition": "Demo075",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 186714
+    },
+    {
+      "code": "169",
+      "name": "语音对话球",
+      "file": "voice.gif",
+      "composition": "Demo169",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 1212967
+    },
+    {
+      "code": "291",
+      "name": "图片像素扰动",
+      "file": "pixels.gif",
+      "composition": "Demo291",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 1549108
+    },
+    {
+      "code": "293",
+      "name": "磁吸网格聚焦",
+      "file": "grid.gif",
+      "composition": "Demo293",
+      "durationSeconds": 8,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 2843905
+    }
+  ],
+  "overview": {
+    "file": "overview.gif",
+    "durationSeconds": 8,
+    "fps": 20,
+    "width": 1200,
+    "height": 748,
+    "bytes": 4740839,
+    "codes": [
+      "035",
+      "048",
+      "293",
+      "069",
+      "075",
+      "169"
+    ]
+  }
+}

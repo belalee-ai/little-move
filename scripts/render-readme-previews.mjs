@@ -3,19 +3,41 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {bundle} from '@remotion/bundler';
 import {openBrowser,selectComposition,renderMedia} from '@remotion/renderer';
-import {DEMOS,demoDefaults} from '../src/demos/catalog.js';
+import {DEMOS,demoDefaults,demoUsesImages} from '../src/demos/catalog.js';
 import {STUDIES,studyDefaults} from '../src/studies/catalog.js';
 import {EFFECTS,DEFAULTS} from '../src/motion-core.js';
 
 // Only renders the existing components. No alternative motion implementation.
 const selection=[
- ['008','typing','NaturalTyping','text'],['022','neon','NeonText','text'],
- ['035','wordmark','Study035','study'],['048','image-reveal','Demo048','demo'],
- ['053','bento','Demo053','demo'],['069','button','Demo069','demo'],
- ['072','tabs','Demo072','demo'],['073','counter','Demo073','demo'],
- ['075','chart','Demo075','demo'],['169','voice','Demo169','demo'],
- ['291','pixels','Demo291','demo'],['293','grid','Demo293','demo'],
+ ['017','decode','ScrambleText','text'],['060','inflate','Study060','study'],
+ ['119','bounce','Demo119','demo'],['134','favorite','Demo134','demo'],
+ ['077','race','Demo077','demo'],['101','waveform','Demo101','demo'],
+ ['007','gather','ScatterGather','text'],['032','letters','Study032','study'],
+ ['063','cells','Study063','study'],['105','punctuation','Demo105','demo'],
+ ['110','handwriting','Demo110','demo'],['113','countermask','Demo113','demo'],
+ ['117','morph','Demo117','demo'],['123','petals','Demo123','demo'],
+ ['052','reorder','Demo052','demo'],['133','hold','Demo133','demo'],
+ ['140','otp','Demo140','demo'],['146','sort','Demo146','demo'],
+ ['076','donut','Demo076','demo'],['151','histogram','Demo151','demo'],
+ ['155','sankey','Demo155','demo'],['157','waffle','Demo157','demo'],
+ ['166','microphone','Demo166','demo'],['170','audio-message','Demo170','demo'],
 ];
+const variants={
+ '017':{color:'#75415b',background:'#f6eff2',accent:'#ae4d6f'},
+ '119':{accent:'#c77435',background:'#fcf3e8'},'134':{accent:'#c45272',background:'#fff0f3'},
+ '101':{accent:'#268684',background:'#edf7f5'},'007':{color:'#3f5e86',background:'#edf3fa',accent:'#739bc6'},
+ '105':{accent:'#b95445',background:'#f8efea'},'110':{accent:'#4b7b63',background:'#f0f5ef'},
+ '113':{accent:'#4567b4',background:'#edf2fa'},'117':{accent:'#7967b3',background:'#f1eef8'},
+ '123':{accent:'#bd6744',background:'#fbf2e9'},'133':{accent:'#276e73',background:'#eaf5f4'},
+ '140':{accent:'#496ab4',background:'#eff3fc'},'146':{accent:'#a7763d',background:'#fbf5eb'},
+ '151':{accent:'#7961ad',background:'#f5eff9'},'155':{accent:'#466d96',background:'#edf3f8'},
+ '157':{accent:'#4f8368',background:'#eef6ee'},'166':{accent:'#3f7890',background:'#eff7f8'},
+ '170':{accent:'#ad657d',background:'#fbf1f4'}
+};
+const propsFor=(meta,kind)=>({...(
+ kind==='text'?{...DEFAULTS,effect:meta.id,color:'#181717',accent:'#6B6965',background:'#FAF9F6',soundPreset:'off'}:
+ kind==='study'?studyDefaults(meta.id):demoDefaults(meta.id)),...variants[meta.code]});
+if(new Set(selection.map(row=>row[0])).size!==selection.length)throw new Error('Repeated showcase ID');
 const root=process.cwd(),out=path.join(root,'docs/previews'),proof=path.join(root,'proof/readme');
 fs.mkdirSync(out,{recursive:true});fs.mkdirSync(proof,{recursive:true});
 const run=args=>execFileSync('ffmpeg',['-hide_banner','-loglevel','error','-y',...args],{stdio:'inherit'});
@@ -27,7 +49,8 @@ if(!process.argv.includes('--encode-only')){
   if(only&&!only.includes(code))continue;
   const meta=(kind==='text'?EFFECTS:kind==='study'?STUDIES:DEMOS).find(d=>d.code===code);
   if(!meta)throw new Error('Missing '+code);
-  const inputProps=kind==='text'?{...DEFAULTS,effect:meta.id,color:'#181717',accent:'#6B6965',background:'#FAF9F6',soundPreset:'off'}:kind==='study'?studyDefaults(meta.id):demoDefaults(meta.id);
+  if(kind==='demo'&&demoUsesImages(meta.id))throw new Error('Image demo excluded from this showcase: '+code);
+  const inputProps=propsFor(meta,kind);
   const composition=await selectComposition({serveUrl,id,inputProps,puppeteerInstance:browser,logLevel:'error'});
   await renderMedia({serveUrl,composition,inputProps,puppeteerInstance:browser,codec:'h264',crf:20,scale:.6,concurrency:3,outputLocation:path.join(proof,file+'.mp4'),logLevel:'error'});
   console.log('Rendered '+code+' '+meta.name);
@@ -42,10 +65,10 @@ for(const [code,file,,kind] of selection){
  run(['-i',input,'-i',palette,'-lavfi',filter+'[v];[v][1:v]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle','-loop','0',path.join(out,file+'.gif')]);
  const meta=(kind==='text'?EFFECTS:kind==='study'?STUDIES:DEMOS).find(d=>d.code===code);
  const video=JSON.parse(execFileSync('ffprobe',['-v','error','-show_entries','format=duration','-of','json',input]));
- manifest.push({code,name:meta.name,file:file+'.gif',composition:selection.find(row=>row[0]===code)[2],durationSeconds:Number(video.format.duration),width:480,height:300,fps:20,bytes:fs.statSync(path.join(out,file+'.gif')).size});
+ manifest.push({code,name:meta.name,file:file+'.gif',composition:selection.find(row=>row[0]===code)[2],inputProps:propsFor(meta,kind),durationSeconds:Number(video.format.duration),width:480,height:300,fps:20,bytes:fs.statSync(path.join(out,file+'.gif')).size});
  console.log('Encoded '+file+'.gif');
 }
-const featured=[['wordmark','035  /  TYPE'],['image-reveal','048  /  IMAGES'],['grid','293  /  LAYOUT'],['button','069  /  CONTROLS'],['chart','075  /  DATA'],['voice','169  /  VOICE']];
+const featured=[['decode','017  /  DECODE'],['inflate','060  /  LETTERING'],['bounce','119  /  PHYSICS'],['favorite','134  /  BUTTON'],['race','077  /  RANKING'],['waveform','101  /  SOUND']];
 const args=featured.flatMap(([file])=>['-stream_loop','-1','-i',path.join(proof,file+'.mp4')]);
 const font=path.join(root,'public/fonts/ChillRoundF.ttf');
 if(!fs.existsSync(font))throw new Error('Missing bundled header font.');
@@ -54,6 +77,6 @@ const filters=featured.map(([,label],i)=>`[${i}:v]fps=20,scale=368:230:force_ori
 filters.push(featured.map((_,i)=>`[v${i}]`).join('')+`xstack=inputs=6:layout=0_0|384_0|768_0|0_290|384_290|768_290:fill=0xe6e7e1,pad=1200:748:24:144:color=0xeeefe9,${text('Little Move',30,30,54)},${text('See it. Shape it. Make it move.',32,98,22,'#63675f')},${text('A LIBRARY OF SMALL MOTIONS',845,65,18,'#63675f')},${text('PREVIEW  /  CUSTOMIZE  /  COPY THE PROMPT',32,718,14,'#63675f')}[hero]`);
 run([...args,'-filter_complex',filters.join(';'),'-map','[hero]','-t','8','-an','-c:v','libx264','-crf','20',path.join(proof,'overview.mp4')]);
 run(['-i',path.join(proof,'overview.mp4'),'-vf','palettegen=max_colors=192:stats_mode=diff','-frames:v','1',path.join(proof,'overview-palette.png')]);
-run(['-i',path.join(proof,'overview.mp4'),'-i',path.join(proof,'overview-palette.png'),'-lavfi','paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle','-loop','0',path.join(out,'overview.gif')]);
-fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify({generatedAt:new Date().toISOString(),source:'Existing Little Move components and current defaults; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.',previews:manifest,overview:{file:'overview.gif',durationSeconds:8,fps:20,width:1200,height:748,bytes:fs.statSync(path.join(out,'overview.gif')).size,codes:featured.map(([,label])=>label.slice(0,3))}},null,2)+'\n');
+run(['-i',path.join(proof,'overview.mp4'),'-i',path.join(proof,'overview-palette.png'),'-lavfi','paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle','-loop','0',path.join(out,'showcase.gif')]);
+fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify({generatedAt:new Date().toISOString(),source:'Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.',previews:manifest,overview:{file:'showcase.gif',durationSeconds:8,fps:20,width:1200,height:748,bytes:fs.statSync(path.join(out,'showcase.gif')).size,codes:featured.map(([,label])=>label.slice(0,3))}},null,2)+'\n');
 console.log('Published preview files in docs/previews/');

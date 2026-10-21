@@ -10,7 +10,7 @@
 
 [![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![293 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
 
-[![Little Move 动态总览：字标重组、图片开窗、磁吸网格、按钮反馈、折线追踪与语音对话球同步运动](docs/previews/overview.gif)](https://belalee-ai.github.io/little-move/)
+[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、收藏反馈、排名竞速和语音波形](docs/previews/showcase.gif)](https://belalee-ai.github.io/little-move/)
 
 *上面会动。六个真实组件的循环预览，点击进入在线版亲手操作。*
 
@@ -20,24 +20,28 @@ Little Move 把“我想要那种感觉”变成可以指给别人看的动作�
 
 ## 先挑一种动作
 
-| 基础文字 · 53 种 | 创意字体 · 41 种 |
+首页总览展示 **017 解码 / 060 充气艺术字 / 119 轨迹弹球 / 134 收藏按钮 / 077 排名竞速 / 101 语音波形**。下面再看六种不同的动作。
+
+| 文字聚合 | 艺术字变化 |
 | --- | --- |
-| [![008 停顿打字：光标逐字前进，保持字号固定](docs/previews/typing.gif)](https://belalee-ai.github.io/little-move/) | [![035 字标重组：字母错拍展开并归位](docs/previews/wordmark.gif)](https://belalee-ai.github.io/little-move/) |
-| **008 · 停顿打字** — 固定字号，有轻重停顿。<br>还有逐字出现、解码、霓虹、换词和歌词高亮。 | **035 · 字标重组** — 字母波浪展开，再聚回字标。<br>还有笔画生长、字形变换、贴纸与空间折叠。 |
+| [![007 散字归位：蓝色文字从分散状态沿弧线聚拢](docs/previews/gather.gif)](https://belalee-ai.github.io/little-move/) | [![063 细胞切割字：字内细胞分裂、舒展并合拢](docs/previews/cells.gif)](https://belalee-ai.github.io/little-move/) |
+| **007 · 散字归位** — 旋转、聚拢，拼回完整句子。 | **063 · 细胞切割字** — 字形内部切分与合拢，保留可读轮廓。 |
 
-| 图片与图形 · 49 种 | 布局 · 17 种 |
+| 几何形态 | 按钮反馈 |
 | --- | --- |
-| [![048 图片开窗：窄窗展开，图片缓慢推移，再切换画面](docs/previews/image-reveal.gif)](https://belalee-ai.github.io/little-move/) | [![293 磁吸网格聚焦：缩略图响应指针，选中图连续进入详情](docs/previews/grid.gif)](https://belalee-ai.github.io/little-move/) |
-| **048 · 图片开窗** — 用遮罩控制画面的出现与切换。<br>还有叠片、视差、拖动对比、像素扰动和滚动弧面。 | **293 · 磁吸网格聚焦** — 多张图协同让位，选中图展开。<br>还有网格重排、便当格、手风琴和共享元素。 |
+| [![117 圆方变形：紫色圆形连续变成圆角方形和菱形](docs/previews/morph.gif)](https://belalee-ai.github.io/little-move/) | [![133 长按确认：青色进度环推进，完成后出现确认状态](docs/previews/hold.gif)](https://belalee-ai.github.io/little-move/) |
+| **117 · 圆方变形** — 边角与旋转连续变化。 | **133 · 长按确认** — 进度、完成反馈与松手回退。 |
 
-| 交互 · 70 种 | 数据 · 63 种 |
+| 图表关系 | 声音控件 |
 | --- | --- |
-| [![069 按钮按压：下沉、回弹并切换为已保存状态](docs/previews/button.gif)](https://belalee-ai.github.io/little-move/) | [![075 折线追踪：曲线、游标和数值同步增长](docs/previews/chart.gif)](https://belalee-ai.github.io/little-move/) |
-| **069 · 按钮按压** — 操作带来明确的状态反馈。<br>还有输入框、开关、标签页、人机验证与语音控件。 | **075 · 折线追踪** — 动作与数据一起变化。<br>还有数字滚动、排名竞速、占比进度与矩阵重排。 |
+| [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) | [![166 话筒展开：蓝青色话筒舒展为带起伏音柱的胶囊](docs/previews/microphone.gif)](https://belalee-ai.github.io/little-move/) |
+| **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 | **166 · 话筒展开** — 圆形入口展开为聆听胶囊，声波随节奏起伏。 |
 
-**[继续看动态画廊：霓虹、像素扰动、语音光球、数字滚动等 12 个完整预览 →](docs/GALLERY.md)**
+**[继续看动态画廊：再看 18 个文字、图形、交互、图表与声音循环 →](docs/GALLERY.md)**
 
-这些 GIF 由当前组件真实渲染，保留原有构图与运动节奏；为了适合 GitHub 阅读，缩小为 20fps、静音循环展示。真实交互、音效与完整预览请[打开在线版](https://belalee-ai.github.io/little-move/)，搜索图中的固定编号。静态截图另用于说明操作入口。
+本次展示共选 **24 个不同编号**：总览的 6 个与后面卡片、画廊的 18 个分开，不含图片展示动效。蓝、紫、珊瑚、玫红、青绿等配色通过现有组件参数设置，参数记录在 [预览清单](docs/previews/manifest.json)。网站默认配色可能不同，动作机制一致。
+
+GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub 阅读，缩小为 20fps、静音循环展示。真实交互、音效与完整预览请[打开在线版](https://belalee-ai.github.io/little-move/)，搜索图中的固定编号。静态截图另用于说明操作入口。
 
 ## 看 → 调 → 用
 

@@ -11,7 +11,7 @@ import {EFFECTS,DEFAULTS} from '../src/motion-core.js';
 const selection=[
  ['017','decode','ScrambleText','text'],['060','inflate','Study060','study'],
  ['119','bounce','Demo119','demo'],['044','sway','Study044','study'],
- ['077','race','Demo077','demo'],['101','waveform','Demo101','demo'],
+ ['077','race','Demo077','demo'],['277','radial-spectrum','Demo277','demo'],
  ['007','gather','ScatterGather','text'],['032','letters','Study032','study'],
  ['063','cells','Study063','study'],['105','punctuation','Demo105','demo'],
  ['110','handwriting','Demo110','demo'],['113','countermask','Demo113','demo'],
@@ -20,19 +20,18 @@ const selection=[
  ['140','otp','Demo140','demo'],['146','sort','Demo146','demo'],
  ['076','donut','Demo076','demo'],['151','histogram','Demo151','demo'],
  ['155','sankey','Demo155','demo'],['157','waffle','Demo157','demo'],
- ['166','microphone','Demo166','demo'],['170','audio-message','Demo170','demo'],
+ ['278','spectrogram','Demo278','demo'],['279','beat-track','Demo279','demo'],
 ];
 const variants={
  '017':{color:'#75415b',background:'#f6eff2',accent:'#ae4d6f'},
  '119':{accent:'#c77435',background:'#fcf3e8'},
- '101':{accent:'#268684',background:'#edf7f5'},'007':{color:'#3f5e86',background:'#edf3fa',accent:'#739bc6'},
+ '007':{color:'#3f5e86',background:'#edf3fa',accent:'#739bc6'},
  '105':{accent:'#b95445',background:'#f8efea'},'110':{accent:'#4b7b63',background:'#f0f5ef'},
  '113':{accent:'#4567b4',background:'#edf2fa'},'117':{accent:'#7967b3',background:'#f1eef8'},
  '123':{accent:'#bd6744',background:'#fbf2e9'},
  '140':{accent:'#496ab4',background:'#eff3fc'},'146':{accent:'#a7763d',background:'#fbf5eb'},
  '151':{accent:'#7961ad',background:'#f5eff9'},'155':{accent:'#466d96',background:'#edf3f8'},
- '157':{accent:'#4f8368',background:'#eef6ee'},'166':{accent:'#3f7890',background:'#eff7f8'},
- '170':{accent:'#ad657d',background:'#fbf1f4'}
+ '157':{accent:'#4f8368',background:'#eef6ee'}
 };
 const propsFor=(meta,kind)=>({...(
  kind==='text'?{...DEFAULTS,effect:meta.id,color:'#181717',accent:'#6B6965',background:'#FAF9F6',soundPreset:'off'}:
@@ -68,7 +67,7 @@ for(const [code,file,,kind] of selection){
  manifest.push({code,name:meta.name,file:file+'.gif',composition:selection.find(row=>row[0]===code)[2],inputProps:propsFor(meta,kind),durationSeconds:Number(video.format.duration),width:480,height:300,fps:20,bytes:fs.statSync(path.join(out,file+'.gif')).size});
  console.log('Encoded '+file+'.gif');
 }
-const featured=[['decode','017  /  DECODE'],['inflate','060  /  LETTERING'],['bounce','119  /  PHYSICS'],['sway','044  /  SCULPTURAL TYPE'],['race','077  /  RANKING'],['waveform','101  /  SOUND']];
+const featured=[['decode','017  /  DECODE'],['inflate','060  /  LETTERING'],['bounce','119  /  PHYSICS'],['sway','044  /  SCULPTURAL TYPE'],['race','077  /  RANKING'],['radial-spectrum','277  /  RADIAL SPECTRUM']];
 const args=featured.flatMap(([file])=>['-stream_loop','-1','-i',path.join(proof,file+'.mp4')]);
 const font=path.join(root,'public/fonts/ChillRoundF.ttf');
 if(!fs.existsSync(font))throw new Error('Missing bundled header font.');

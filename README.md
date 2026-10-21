@@ -10,7 +10,7 @@
 
 [![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![293 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
 
-[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和语音波形](docs/previews/showcase.gif)](https://belalee-ai.github.io/little-move/)
+[![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/little-move/)
 
 *上面会动。六个真实组件的循环预览，点击进入在线版亲手操作。*
 
@@ -20,7 +20,7 @@ Little Move 把“我想要那种感觉”变成可以指给别人看的动作�
 
 ## 先挑一种动作
 
-首页总览展示 **017 解码 / 060 充气艺术字 / 119 轨迹弹球 / 044 钟摆字形 / 077 排名竞速 / 101 语音波形**。下面展开看六种代表动作。
+首页总览展示 **017 解码 / 060 充气艺术字 / 119 轨迹弹球 / 044 钟摆字形 / 077 排名竞速 / 277 径向频谱**。下面展开看八种代表动作。
 
 | 钟摆与字形 | 缩写与释义 |
 | --- | --- |
@@ -32,10 +32,15 @@ Little Move 把“我想要那种感觉”变成可以指给别人看的动作�
 | [![117 圆方变形：紫色圆形连续变成圆角方形和菱形](docs/previews/morph.gif)](https://belalee-ai.github.io/little-move/) | [![047 反向字带：上下文字反向运动，连续切换字形](docs/previews/bands.gif)](https://belalee-ai.github.io/little-move/) |
 | **117 · 圆方变形** — 边角与旋转连续变化。 | **047 · 反向字带** — 上下反向运动，连续切换字形。 |
 
-| 图表关系 | 声音控件 |
+| 图表关系 | 径向频谱 |
 | --- | --- |
-| [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) | [![166 话筒展开：蓝青色话筒舒展为带起伏音柱的胶囊](docs/previews/microphone.gif)](https://belalee-ai.github.io/little-move/) |
-| **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 | **166 · 话筒展开** — 圆形入口展开为聆听胶囊，声波随节奏起伏。 |
+| [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) | [![277 径向频谱：声纹沿圆周伸缩，进度环绕中心推进](docs/previews/radial-spectrum.gif)](https://belalee-ai.github.io/little-move/) |
+| **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 | **277 · 径向频谱** — 声纹沿圆周伸缩，进度围绕中心推进。 |
+
+| 滚动声谱 | 节拍轨道 |
+| --- | --- |
+| [![278 滚动声谱：频带矩阵连续滚动，游标标记播放位置](docs/previews/spectrogram.gif)](https://belalee-ai.github.io/little-move/) | [![279 节拍轨道：拍点沿时间轴移动，当前节拍点亮](docs/previews/beat-track.gif)](https://belalee-ai.github.io/little-move/) |
+| **278 · 滚动声谱** — 强弱变化形成滚动矩阵，游标保留播放位置。 | **279 · 节拍轨道** — 拍点沿时间轴移动，当前节拍点亮。 |
 
 **[继续看动态画廊：再看 19 个文字、图形、交互、图表与声音循环 →](docs/GALLERY.md)**
 

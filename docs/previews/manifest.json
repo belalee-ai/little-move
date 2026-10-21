@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:24:01.905Z",
+  "generatedAt": "2026-10-21T13:29:19.849Z",
   "source": "Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
   "previews": [
     {
@@ -122,26 +122,29 @@
       "bytes": 304300
     },
     {
-      "code": "101",
-      "name": "语音波形",
-      "file": "waveform.gif",
-      "composition": "Demo101",
+      "code": "277",
+      "name": "径向频谱",
+      "file": "radial-spectrum.gif",
+      "composition": "Demo277",
       "inputProps": {
-        "demo": "demo-voice",
+        "demo": "demo-fill-radialsound",
         "speed": 1,
         "strength": 1,
-        "background": "#edf7f5",
-        "accent": "#268684",
+        "background": "#f4f4f1",
+        "accent": "#30383b",
         "title": "Light, in motion",
         "fit": "cover",
         "images": [],
+        "motionText": "",
+        "dataValues": "24,56,38,82,67,45",
+        "dataLabels": "A,B,C,D,E,F",
         "voiceStyle": "live"
       },
       "durationSeconds": 8,
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 1752479
+      "bytes": 760344
     },
     {
       "code": "007",
@@ -533,46 +536,54 @@
       "bytes": 443902
     },
     {
-      "code": "166",
-      "name": "话筒展开",
-      "file": "microphone.gif",
-      "composition": "Demo166",
+      "code": "278",
+      "name": "滚动声谱",
+      "file": "spectrogram.gif",
+      "composition": "Demo278",
       "inputProps": {
-        "demo": "demo-mic-capsule",
+        "demo": "demo-fill-spectrogram",
         "speed": 1,
         "strength": 1,
-        "background": "#eff7f8",
-        "accent": "#3f7890",
+        "background": "#f4f4f1",
+        "accent": "#30383b",
         "title": "Light, in motion",
         "fit": "cover",
-        "images": []
+        "images": [],
+        "motionText": "",
+        "dataValues": "24,56,38,82,67,45",
+        "dataLabels": "A,B,C,D,E,F",
+        "voiceStyle": "live"
       },
       "durationSeconds": 8,
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 539770
+      "bytes": 5066981
     },
     {
-      "code": "170",
-      "name": "语音消息",
-      "file": "audio-message.gif",
-      "composition": "Demo170",
+      "code": "279",
+      "name": "节拍轨道",
+      "file": "beat-track.gif",
+      "composition": "Demo279",
       "inputProps": {
-        "demo": "demo-voice-message",
+        "demo": "demo-fill-beattrack",
         "speed": 1,
         "strength": 1,
-        "background": "#fbf1f4",
-        "accent": "#ad657d",
+        "background": "#f4f4f1",
+        "accent": "#30383b",
         "title": "Light, in motion",
         "fit": "cover",
-        "images": []
+        "images": [],
+        "motionText": "",
+        "dataValues": "24,56,38,82,67,45",
+        "dataLabels": "A,B,C,D,E,F",
+        "voiceStyle": "live"
       },
       "durationSeconds": 8,
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 132213
+      "bytes": 397004
     }
   ],
   "overview": {
@@ -581,14 +592,14 @@
     "fps": 20,
     "width": 1200,
     "height": 748,
-    "bytes": 5236976,
+    "bytes": 4876688,
     "codes": [
       "017",
       "060",
       "119",
       "044",
       "077",
-      "101"
+      "277"
     ]
   }
 }

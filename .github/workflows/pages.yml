@@ -12,6 +12,7 @@ on:
       - 'tsconfig.json'
       - 'scripts/check-web-build.mjs'
       - 'scripts/check-pixel-field.mjs'
+      - 'scripts/check-intake-studies.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -35,6 +36,7 @@ jobs:
       - run: npm run check
       - run: node scripts/check-coverage.mjs
       - run: node scripts/check-pixel-field.mjs
+      - run: node scripts/check-intake-studies.mjs
       - run: npm run build
         env:
           DEPLOY_BASE: /little-move/

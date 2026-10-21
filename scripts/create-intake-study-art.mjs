@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+const folder='public/intake-studies';fs.mkdirSync(folder,{recursive:true});
+// Each study has its own original architectural subject. No imported photography.
+const scenes=[
+ ['scroll-arch',`<path d="M0 0h1200v800H0z" fill="#d9dedb"/><path d="M70 80h1060v720H70z" fill="#d6ccba"/><path d="M270 800V390a330 330 0 0 1 660 0v410" fill="#586d69"/><path d="M330 800V410a270 270 0 0 1 540 0v390" fill="#c4bca8"/><path d="M450 800V450a150 150 0 0 1 300 0v350" fill="#354b48"/><path d="M70 80l80-50h1060l-80 50z" fill="#ede7da"/><path d="M70 80v720h80V30z" fill="#e5ddce"/>`],
+ ['scroll-stair',`<path d="M0 0h1200v800H0z" fill="#dde0da"/><path d="M160 60h880v740H160z" fill="#d0d2c7"/><path d="M160 60l350 210v530H160z" fill="#7b8678"/><path d="M510 270h530v530H510z" fill="#e8e6d9"/>${Array.from({length:9},(_,i)=>`<path d="M${170+i*69} ${735-i*58}h${720-i*55}v60H${170+i*69}z" fill="${i%2?'#e9e4d6':'#c1c5b5'}"/>`).join('')}<path d="M840 60h80v380h-80z" fill="#3b5048"/>`],
+ ['scroll-fold',`<path d="M0 0h1200v800H0z" fill="#d5dbdc"/><path d="M130 120l530-90 410 200v570H130z" fill="#ded8ca"/><path d="M660 30v770h410V230z" fill="#939e99"/><path d="M130 120l530 240-210 440H130z" fill="#f0eadc"/><path d="M660 360l-210 440h620V230z" fill="#a4aea3"/><path d="M730 400h220v310H730z" fill="#2f4544"/>`],
+ ['grid-1',`<path d="M0 0h1200v800H0z" fill="#d8ddd8"/><path d="M170 60h850v740H170z" fill="#e3ded1"/><circle cx="600" cy="390" r="240" fill="#6c8075"/><circle cx="600" cy="390" r="152" fill="#c8c6b2"/><path d="M170 800l300-350h350l200 350" fill="#b5bdaa"/>`],
+ ['grid-2',`<path d="M0 0h1200v800H0z" fill="#dbdcd3"/>${Array.from({length:6},(_,i)=>`<path d="M${130+i*162} 90h94v710h-94z" fill="${i%2?'#a5afa4':'#e4dece'}"/><path d="M${224+i*162} 90l30-20v730h-30z" fill="#667b73"/>`).join('')}`],
+ ['grid-3',`<path d="M0 0h1200v800H0z" fill="#dde2dd"/><path d="M80 100h1040v700H80z" fill="#ded4c4"/><path d="M200 800V400a400 320 0 0 1 800 0v400" fill="#7e8c7c"/><path d="M330 800V420a270 210 0 0 1 540 0v380" fill="#354c47"/><path d="M80 100l80-60h1040l-80 60z" fill="#efe6d7"/><path d="M80 800l300-240h450l290 240" fill="#b4b9a5"/>`],
+ ['grid-4',`<path d="M0 0h1200v800H0z" fill="#d5dad7"/><path d="M130 170l460-100 480 140v590H130z" fill="#c0c4b6"/><path d="M590 70v730h480V210z" fill="#e6dece"/><path d="M590 70l-190 730H130V170z" fill="#85988b"/><path d="M680 360h270v300H680z" fill="#3d554e"/>`],
+ ['grid-5',`<path d="M0 0h1200v800H0z" fill="#dbe0d8"/><path d="M80 130h1040v670H80z" fill="#e3ddca"/>${Array.from({length:7},(_,i)=>`<path d="M${80+i*150} 130h${50+i*3}v670H${80+i*150}z" fill="#657c70"/>`).join('')}<path d="M80 130l400-100h640v100" fill="#f2e9d6"/>`],
+ ['grid-6',`<path d="M0 0h1200v800H0z" fill="#d9dfdb"/><path d="M120 130h960v670H120z" fill="#c7cbbc"/><path d="M120 130l300 130v540H120z" fill="#829584"/><path d="M420 260h660v540H420z" fill="#e4decc"/><circle cx="750" cy="435" r="180" fill="#60796a"/><path d="M420 800l250-185h220l190 185" fill="#a7b19b"/>`]
+];
+for(const [name,body]of scenes)fs.writeFileSync(folder+'/'+name+'.svg',`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"><title>Original architectural study — ${name}</title>${body}</svg>\n`);
+console.log('Wrote nine independent original architectural illustrations.');

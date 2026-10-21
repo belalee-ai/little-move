@@ -23,3 +23,5 @@ Remotion 使用单独的许可，不能把本仓库称为“所有内容均 MIT�
 参考网站与同名动作仅用于溯源和理解通用机制，不表示获得其商业字体、付费组件或整套模板的授权。详细历史核查见 THIRD-PARTY-NOTICES.md；LICENSE-AUDIT.md 仅记录 2026-10-15 对最初 30 项的核查，不代表后来全部词条的法律鉴定。
 
 291 的默认素材 `public/pixel-field/quiet-courtyard.svg` 是本项目原创建筑示意插画。该动效参考 Yuri Artiukh 的 [Pixel Distortion Demo](https://tympanus.net/Development/DistortedPixels/index3.html) 的通用机制，独立以 SVG 采样与帧时钟实现；未复制其 Three.js 代码、字体或脑部渲染图。上游 [MIT 许可](https://github.com/akella/DistortedPixels/blob/master/LICENSE) 于 2026-10-21 核验。
+
+292、293 的九幅默认建筑示意插画位于 `public/intake-studies/`，生成源为 `scripts/create-intake-study-art.mjs`，属于本项目自有素材。292 参考 Jan Kohlbach 的[滚动变形示例](https://tympanus.net/Tutorials/ShaderOnScroll/)，[上游 MIT 许可](https://github.com/jankohlbach/codrops-shader-on-scroll/blob/master/LICENSE)已于 2026-10-21 读取；293 参考 Manoela Ilic 的[磁吸网格示例](https://tympanus.net/Development/3DGridContentPreview/)，[上游 MIT 许可](https://github.com/codrops/3DGridContentPreview/blob/main/LICENSE)同日读取。两项均独立实现通用动作机制，未分发上游代码、照片、字体或音频；未增加依赖。

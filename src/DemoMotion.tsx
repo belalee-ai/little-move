@@ -1,3 +1,4 @@
+import {ScrollGrainScene,MagneticGridScene} from './intake-studies/Scenes';
 import {PixelFieldScene} from './pixel-field/PixelFieldScene';
 import {CoverageScene} from './coverage/CoverageScene';
 import {isCoverage} from './coverage/catalog.js';
@@ -67,6 +68,8 @@ export const DemoMotion:React.FC<DemoProps>=props=>{
  if(APPLE_CONTROL_KEYS.includes(meta.key))scene=<AppleControls p={p} t={t} kind={meta.key}/>;
  if(meta.key==='voice')scene=<VoiceScene p={p} frame={frame} fps={fps}/>;
  if(FEEDBACK_KEYS.includes(meta.key))scene=<FeedbackScene p={p} t={t} kind={meta.key} state={s}/>;
+ if(meta.key==='scroll-grain')scene=<ScrollGrainScene p={p} frame={frame} fps={fps}/>;
+ if(meta.key==='magnetic-grid')scene=<MagneticGridScene p={p} frame={frame} fps={fps}/>;
  if(meta.key==='pixel-field')scene=<PixelFieldScene p={p} frame={frame} fps={fps}/>;
  if(isCoverage(p.demo))scene=<CoverageScene p={p} t={t}/>;
  return <AbsoluteFill data-demo={meta.key} data-demo-frame={frame} data-demo-index={s.index} style={{background:p.background,color:['grid','bento','expand','accordion','tilt','magnet','follow','drag','press','input','switch','tabs'].includes(meta.key)?'#242528':'#253f40',fontFamily:'Arial, sans-serif',overflow:'hidden'}}>{scene}<MotionSound id={p.demo} settings={p} soundPreset={p.soundPreset} soundVolume={p.soundVolume}/></AbsoluteFill>;

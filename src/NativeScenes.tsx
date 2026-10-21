@@ -25,7 +25,7 @@ const accentForeground=(color:string)=>{
 const blendInk=(from:string,to:string,p:number)=>`rgb(${colorChannels(from).map((v,i)=>Math.round(mix(v,colorChannels(to)[i],clamp(p)))).join(',')})`;
 const titles=['Research','Design','Prototype','Feedback','Build','Launch'];
 const button:React.CSSProperties={font:'inherit',border:0,padding:0,color:'inherit',cursor:'pointer'};
-export const nativeKeys=[...COVERAGE_NATIVE_KEYS,...VOICE_UI_KEYS,...VERIFICATION_KEYS,...BATCH_CONTROL_KEYS,...FEEDBACK_KEYS,'tilt','follow','accordion','magnet','press','input','switch','tabs'];
+export const nativeKeys=['scroll-grain','magnetic-grid',...COVERAGE_NATIVE_KEYS,...VOICE_UI_KEYS,...VERIFICATION_KEYS,...BATCH_CONTROL_KEYS,...FEEDBACK_KEYS,'tilt','follow','accordion','magnet','press','input','switch','tabs'];
 export const contentKeys=['grid','bento','expand','accordion','tilt',...nativeKeys.filter(key=>!FEEDBACK_KEYS.includes(key))];
 export const NativeScene:React.FC<{p:DemoProps;s:State;kind:string;auto:boolean}>=({p,s,kind,auto})=>{
  const n=p.native,q=s.p,t=s.t,selected=n?Math.round(p.input?.index??s.index):Math.round(s.index),accent=p.accent??'#34363a',onAccent=accentForeground(accent);

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:08:01.687Z",
+  "generatedAt": "2026-10-21T10:34:41.444Z",
   "schedule": "codex-desktop-heartbeat",
   "schedulePolicy": {
     "provider": "codex-desktop-heartbeat",
@@ -11,36 +11,15 @@
   "quantityLimit": null,
   "minimumAccepted": 0,
   "publishMode": "auto-publish",
-  "implemented": 291,
+  "implemented": 293,
   "categories": 30,
-  "nextCode": "292",
-  "candidates": [
-    {
-      "key": "image-scroll-grain",
-      "name": "滚动扭曲与颗粒",
-      "collection": "图片与图形",
-      "signature": "image-scroll-velocity-grain-distortion",
-      "source": "https://tympanus.net/Tutorials/ShaderOnScroll/",
-      "status": "discovered",
-      "license": "待核验，尚未采用",
-      "notes": "需要真实滚动速度驱动，并有视频时间轴输入。"
-    },
-    {
-      "key": "magnetic-grid-detail",
-      "name": "磁吸立体网格到详情",
-      "collection": "布局",
-      "signature": "grid-pointer-3d-magnetic-shared-preview",
-      "source": "https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/",
-      "status": "discovered",
-      "license": "待核验，尚未采用",
-      "notes": "原文机制已读取。与054详情展开有重叠，优先评估作为054的扩展版本，不自动新增编号。"
-    }
-  ],
+  "nextCode": "294",
+  "candidates": [],
   "duplicates": [
-    "image-pixel-distortion"
+    "image-pixel-distortion",
+    "image-scroll-grain",
+    "magnetic-grid-detail"
   ],
-  "counts": {
-    "discovered": 2
-  },
+  "counts": {},
   "note": "脚本只盘点字段、编号和显式特征；语义去重、来源许可、真实预览和质量验收由维护者执行。配置描述维护安排，不启动调度、不检索网络、不修改网站、不发布。定时运行由维护者的 Codex App 配置。"
 }

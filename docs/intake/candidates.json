@@ -21,19 +21,27 @@
       "collection": "图片与图形",
       "signature": "image-scroll-velocity-grain-distortion",
       "source": "https://tympanus.net/Tutorials/ShaderOnScroll/",
-      "status": "discovered",
-      "license": "待核验，尚未采用",
-      "notes": "需要真实滚动速度驱动，并有视频时间轴输入。"
+      "status": "accepted",
+      "license": "原仓库 MIT 许可正文已核验；本项独立以 SVG 连续位移与帧时钟实现，未复制上游代码、字体或图片。",
+      "notes": "实际上下滚动原版确认速度驱动和反向弧面；与050整层视差、291局部像素错位不同。已收录292，支持滚轮、拖动、键盘和换图，详见UPDATES.md。",
+      "code": "292",
+      "author": "Jan Kohlbach",
+      "checkedAt": "2026-10-21",
+      "article": "https://tympanus.net/codrops/?p=78948"
     },
     {
       "key": "magnetic-grid-detail",
       "name": "磁吸立体网格到详情",
       "collection": "布局",
       "signature": "grid-pointer-3d-magnetic-shared-preview",
-      "source": "https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/",
-      "status": "discovered",
-      "license": "待核验，尚未采用",
-      "notes": "原文机制已读取。与054详情展开有重叠，优先评估作为054的扩展版本，不自动新增编号。"
+      "source": "https://tympanus.net/Development/3DGridContentPreview/",
+      "status": "accepted",
+      "license": "原仓库 MIT 许可正文已核验；本项独立实现，未复制上游代码、摄影或字体，默认六幅图为本项目原创示意插画。",
+      "notes": "实际操作原版网格与详情。区别054单内容卡展开：各缩略图独立磁吸/倾斜，其余图错拍撤离，选中图连续变形进入详情；作为独立可复用机制收录293。",
+      "code": "293",
+      "author": "Manoela Ilic / Codrops",
+      "checkedAt": "2026-10-21",
+      "article": "https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/"
     }
   ]
 }

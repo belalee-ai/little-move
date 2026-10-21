@@ -20,31 +20,26 @@ Little Move 把“我想要那种感觉”变成可以指给别人看的动作�
 
 ## 先挑一种动作
 
-首页总览展示 **017 解码 / 060 充气艺术字 / 119 轨迹弹球 / 044 钟摆字形 / 077 排名竞速 / 277 径向频谱**。下面展开看八种代表动作。
+首页总览的六种动效各展示一次。下面再看六种不同的动作。
 
-| 钟摆与字形 | 缩写与释义 |
+| 缩写与释义 | 反向字带 |
 | --- | --- |
-| [![044 钟摆字形：钟摆往返，细长字杆随节拍弯曲](docs/previews/sway.gif)](https://belalee-ai.github.io/little-move/) | [![046 缩写展开与释义：字母放大重排，解释词沿对应字母展开](docs/previews/monogram.gif)](https://belalee-ai.github.io/little-move/) |
-| **044 · 钟摆字形** — 摆锤往返，细长字杆随节拍弯曲。 | **046 · 缩写展开与释义** — 字母放大重排，释义逐字展开。 |
+| [![046 缩写展开与释义：字母放大重排，解释词沿对应字母展开](docs/previews/monogram.gif)](https://belalee-ai.github.io/little-move/) | [![047 反向字带：上下文字反向运动，连续切换字形](docs/previews/bands.gif)](https://belalee-ai.github.io/little-move/) |
+| **046 · 缩写展开与释义** — 字母放大重排，释义逐字展开。 | **047 · 反向字带** — 上下反向运动，连续切换字形。 |
 
-| 几何形态 | 反向字带 |
+| 立体几何 | 图表关系 |
 | --- | --- |
-| [![117 圆方变形：紫色圆形连续变成圆角方形和菱形](docs/previews/morph.gif)](https://belalee-ai.github.io/little-move/) | [![047 反向字带：上下文字反向运动，连续切换字形](docs/previews/bands.gif)](https://belalee-ai.github.io/little-move/) |
-| **117 · 圆方变形** — 边角与旋转连续变化。 | **047 · 反向字带** — 上下反向运动，连续切换字形。 |
-
-| 图表关系 | 径向频谱 |
-| --- | --- |
-| [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) | [![277 径向频谱：声纹沿圆周伸缩，进度环绕中心推进](docs/previews/radial-spectrum.gif)](https://belalee-ai.github.io/little-move/) |
-| **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 | **277 · 径向频谱** — 声纹沿圆周伸缩，进度围绕中心推进。 |
+| [![125 立方错层：等距立方块错拍升降，形成流动的立体阶梯](docs/previews/cube-layers.gif)](https://belalee-ai.github.io/little-move/) | [![155 流量汇聚：蓝色流带按来源和去向逐条绘出](docs/previews/sankey.gif)](https://belalee-ai.github.io/little-move/) |
+| **125 · 立方错层** — 立方块错拍升降，顶面与侧面连续相接。 | **155 · 流量汇聚** — 带宽与流量对应，节点与流带共同出现。 |
 
 | 滚动声谱 | 节拍轨道 |
 | --- | --- |
 | [![278 滚动声谱：频带矩阵连续滚动，游标标记播放位置](docs/previews/spectrogram.gif)](https://belalee-ai.github.io/little-move/) | [![279 节拍轨道：拍点沿时间轴移动，当前节拍点亮](docs/previews/beat-track.gif)](https://belalee-ai.github.io/little-move/) |
 | **278 · 滚动声谱** — 强弱变化形成滚动矩阵，游标保留播放位置。 | **279 · 节拍轨道** — 拍点沿时间轴移动，当前节拍点亮。 |
 
-**[继续看动态画廊：再看 19 个文字、图形、交互、图表与声音循环 →](docs/GALLERY.md)**
+**[继续看动态画廊：另外 13 个文字、图形、交互与图表循环 →](docs/GALLERY.md)**
 
-本次展示共选 **25 个不同编号**：总览展示 6 个，画廊另选 19 个，不含图片展示动效。蓝、紫、珊瑚、玫红、青绿等配色通过现有组件参数设置，参数记录在 [预览清单](docs/previews/manifest.json)。网站默认配色可能不同，动作机制一致。
+本次展示共选 **25 个不同编号**：总览 6 个、首页卡片 6 个、画廊 13 个，三处互不重复，不含图片展示动效。配色采用现有组件参数，设置记录在 [预览清单](docs/previews/manifest.json)。网站默认配色可能不同，动作机制一致。
 
 GIF 由当前组件真实渲染，保留原有运动节奏；为了适合 GitHub 阅读，缩小为 20fps、静音循环展示。真实交互、音效与完整预览请[打开在线版](https://belalee-ai.github.io/little-move/)，搜索图中的固定编号。静态截图另用于说明操作入口。
 

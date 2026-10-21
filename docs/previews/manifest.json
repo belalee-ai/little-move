@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:29:19.849Z",
+  "generatedAt": "2026-10-21T13:34:52.719Z",
   "source": "Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
   "previews": [
     {
@@ -288,16 +288,16 @@
       "bytes": 378507
     },
     {
-      "code": "117",
-      "name": "圆方变形",
-      "file": "morph.gif",
-      "composition": "Demo117",
+      "code": "125",
+      "name": "立方错层",
+      "file": "cube-layers.gif",
+      "composition": "Demo125",
       "inputProps": {
-        "demo": "demo-morph",
+        "demo": "demo-isocubes",
         "speed": 1,
         "strength": 1,
-        "background": "#f1eef8",
-        "accent": "#7967b3",
+        "background": "#f1f3f8",
+        "accent": "#6375a3",
         "title": "Light, in motion",
         "fit": "cover",
         "images": [],
@@ -307,7 +307,7 @@
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 371368
+      "bytes": 2164079
     },
     {
       "code": "123",

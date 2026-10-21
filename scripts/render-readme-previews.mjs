@@ -15,7 +15,7 @@ const selection=[
  ['007','gather','ScatterGather','text'],['032','letters','Study032','study'],
  ['063','cells','Study063','study'],['105','punctuation','Demo105','demo'],
  ['110','handwriting','Demo110','demo'],['113','countermask','Demo113','demo'],
- ['117','morph','Demo117','demo'],['123','petals','Demo123','demo'],
+ ['125','cube-layers','Demo125','demo'],['123','petals','Demo123','demo'],
  ['052','reorder','Demo052','demo'],['046','monogram','Study046','study'],['047','bands','Study047','study'],
  ['140','otp','Demo140','demo'],['146','sort','Demo146','demo'],
  ['076','donut','Demo076','demo'],['151','histogram','Demo151','demo'],
@@ -27,7 +27,7 @@ const variants={
  '119':{accent:'#c77435',background:'#fcf3e8'},
  '007':{color:'#3f5e86',background:'#edf3fa',accent:'#739bc6'},
  '105':{accent:'#b95445',background:'#f8efea'},'110':{accent:'#4b7b63',background:'#f0f5ef'},
- '113':{accent:'#4567b4',background:'#edf2fa'},'117':{accent:'#7967b3',background:'#f1eef8'},
+ '113':{accent:'#4567b4',background:'#edf2fa'},'125':{accent:'#6375a3',background:'#f1f3f8'},
  '123':{accent:'#bd6744',background:'#fbf2e9'},
  '140':{accent:'#496ab4',background:'#eff3fc'},'146':{accent:'#a7763d',background:'#fbf5eb'},
  '151':{accent:'#7961ad',background:'#f5eff9'},'155':{accent:'#466d96',background:'#edf3f8'},
@@ -78,4 +78,5 @@ run([...args,'-filter_complex',filters.join(';'),'-map','[hero]','-t','8','-an',
 run(['-i',path.join(proof,'overview.mp4'),'-vf','palettegen=max_colors=192:stats_mode=diff','-frames:v','1',path.join(proof,'overview-palette.png')]);
 run(['-i',path.join(proof,'overview.mp4'),'-i',path.join(proof,'overview-palette.png'),'-lavfi','paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle','-loop','0',path.join(out,'showcase.gif')]);
 fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify({generatedAt:new Date().toISOString(),source:'Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.',previews:manifest,overview:{file:'showcase.gif',durationSeconds:8,fps:20,width:1200,height:748,bytes:fs.statSync(path.join(out,'showcase.gif')).size,codes:featured.map(([,label])=>label.slice(0,3))}},null,2)+'\n');
+execFileSync(process.execPath,['scripts/check-readme-previews.mjs'],{stdio:'inherit'});
 console.log('Published preview files in docs/previews/');

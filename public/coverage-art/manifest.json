@@ -1,0 +1,506 @@
+[
+  {
+    "file": "iris-0.svg",
+    "effect": "201",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "iris-1.svg",
+    "effect": "201",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "iris-2.svg",
+    "effect": "201",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "blinds-0.svg",
+    "effect": "202",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "blinds-1.svg",
+    "effect": "202",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "blinds-2.svg",
+    "effect": "202",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "tiles-0.svg",
+    "effect": "203",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "tiles-1.svg",
+    "effect": "203",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "tiles-2.svg",
+    "effect": "203",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "ribbonmask-0.svg",
+    "effect": "204",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "ribbonmask-1.svg",
+    "effect": "204",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "ribbonmask-2.svg",
+    "effect": "204",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "diagonal-0.svg",
+    "effect": "205",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "diagonal-1.svg",
+    "effect": "205",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "diagonal-2.svg",
+    "effect": "205",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "foldreveal-0.svg",
+    "effect": "206",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "foldreveal-1.svg",
+    "effect": "206",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "foldreveal-2.svg",
+    "effect": "206",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "softreveal-0.svg",
+    "effect": "207",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "softreveal-1.svg",
+    "effect": "207",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "softreveal-2.svg",
+    "effect": "207",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "matchzoom-0.svg",
+    "effect": "208",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "matchzoom-1.svg",
+    "effect": "208",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "matchzoom-2.svg",
+    "effect": "208",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "filmstrip-0.svg",
+    "effect": "209",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "filmstrip-1.svg",
+    "effect": "209",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "filmstrip-2.svg",
+    "effect": "209",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "shutter-0.svg",
+    "effect": "210",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "shutter-1.svg",
+    "effect": "210",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "shutter-2.svg",
+    "effect": "210",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "splitcurtain-0.svg",
+    "effect": "211",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "splitcurtain-1.svg",
+    "effect": "211",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "splitcurtain-2.svg",
+    "effect": "211",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "pagecurl-0.svg",
+    "effect": "212",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "pagecurl-1.svg",
+    "effect": "212",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "pagecurl-2.svg",
+    "effect": "212",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "fanphotos-0.svg",
+    "effect": "213",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "fanphotos-1.svg",
+    "effect": "213",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "fanphotos-2.svg",
+    "effect": "213",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "curvewipe-0.svg",
+    "effect": "214",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "curvewipe-1.svg",
+    "effect": "214",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "curvewipe-2.svg",
+    "effect": "214",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "depthstage-0.svg",
+    "effect": "215",
+    "layer": "background",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "depthstage-1.svg",
+    "effect": "215",
+    "layer": "middle",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "depthstage-2.svg",
+    "effect": "215",
+    "layer": "foreground",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "orbitphotos-0.svg",
+    "effect": "216",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "orbitphotos-1.svg",
+    "effect": "216",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "orbitphotos-2.svg",
+    "effect": "216",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "scrollplanes-0.svg",
+    "effect": "217",
+    "layer": "background",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "scrollplanes-1.svg",
+    "effect": "217",
+    "layer": "middle",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "scrollplanes-2.svg",
+    "effect": "217",
+    "layer": "foreground",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "windowtravel-0.svg",
+    "effect": "218",
+    "layer": "background",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "windowtravel-1.svg",
+    "effect": "218",
+    "layer": "middle",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "windowtravel-2.svg",
+    "effect": "218",
+    "layer": "foreground",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "focusplanes-0.svg",
+    "effect": "219",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "focusplanes-1.svg",
+    "effect": "219",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "focusplanes-2.svg",
+    "effect": "219",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "perspectivepan-0.svg",
+    "effect": "220",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "perspectivepan-1.svg",
+    "effect": "220",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "perspectivepan-2.svg",
+    "effect": "220",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "explodeplanes-0.svg",
+    "effect": "221",
+    "layer": "background",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "explodeplanes-1.svg",
+    "effect": "221",
+    "layer": "middle",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "explodeplanes-2.svg",
+    "effect": "221",
+    "layer": "foreground",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "verticalcompare-0.svg",
+    "effect": "222",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "verticalcompare-1.svg",
+    "effect": "222",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "verticalcompare-2.svg",
+    "effect": "222",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "spotcompare-0.svg",
+    "effect": "223",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "spotcompare-1.svg",
+    "effect": "223",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "spotcompare-2.svg",
+    "effect": "223",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "synczoom-0.svg",
+    "effect": "224",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "synczoom-1.svg",
+    "effect": "224",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "synczoom-2.svg",
+    "effect": "224",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "onion-0.svg",
+    "effect": "225",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "onion-1.svg",
+    "effect": "225",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "onion-2.svg",
+    "effect": "225",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "loupe-0.svg",
+    "effect": "226",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "loupe-1.svg",
+    "effect": "226",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "loupe-2.svg",
+    "effect": "226",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "checkercompare-0.svg",
+    "effect": "227",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "checkercompare-1.svg",
+    "effect": "227",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "checkercompare-2.svg",
+    "effect": "227",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "triplecompare-0.svg",
+    "effect": "228",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "triplecompare-1.svg",
+    "effect": "228",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  },
+  {
+    "file": "triplecompare-2.svg",
+    "effect": "228",
+    "layer": "image",
+    "source": "Original procedural architectural illustration; no external image assets."
+  }
+]

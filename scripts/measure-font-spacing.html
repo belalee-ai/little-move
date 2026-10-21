@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>Font spacing measurements</title><pre id="result">Measuring bundled fonts…</pre><script type="module">
+const fonts=[['Noto Sans SC','NotoSansSC.ttf',true],['Noto Serif SC','NotoSerifSC.ttf',true],['Chill Round F','ChillRoundF.ttf'],['Xiaolai','Xiaolai-Regular.ttf'],['LXGW WenKai Lite','LXGWWenKai-Regular.ttf'],['Smiley Sans Oblique','SmileySans-Oblique.ttf']];
+const chars=Array.from({length:95},(_,i)=>String.fromCharCode(i+32));
+try{
+ const result={};const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');
+ for(const [family,file,variable] of fonts){
+  const face=await new FontFace(family,`url(/fonts/${file})`,{weight:variable?'100 900':'400'}).load();document.fonts.add(face);
+  const variants={};
+  for(const weight of variable?[200,400,450,500,550,600,650,700,750,800]:[400]){
+   ctx.font=`${weight} 1000px "${family}"`;ctx.fontKerning='normal';
+   variants[weight]=chars.map(c=>Number((ctx.measureText(c).width/1000).toFixed(6)));
+  }
+  result[family]=variants;
+ }
+ document.querySelector('#result').textContent=JSON.stringify(result);
+ document.documentElement.dataset.ready='true';
+}catch(error){document.querySelector('#result').textContent=String(error);document.documentElement.dataset.ready='error';}
+</script>

@@ -1,0 +1,3 @@
+import path from 'node:path';import {bundle} from '@remotion/bundler';import {openBrowser,selectComposition,renderMedia} from '@remotion/renderer';
+const root=process.cwd(),serveUrl=await bundle({entryPoint:path.join(root,'scripts/original-quality-entry.jsx'),publicDir:path.join(root,'public')}),browser=await openBrowser('chrome',{logLevel:'error'});
+try{const composition=await selectComposition({serveUrl,id:'OriginalMotionReview',puppeteerInstance:browser,logLevel:'error'});await renderMedia({serveUrl,composition,puppeteerInstance:browser,outputLocation:path.join(root,'proof/original-quality/motion-review.mp4'),codec:'h264',crf:22,concurrency:2,logLevel:'error'});console.log('Rendered actual 8-second review video, 60fps.');}finally{await browser.close({silent:true});}

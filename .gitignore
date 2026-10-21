@@ -1,0 +1,17 @@
+node_modules/
+dist/
+out/
+.DS_Store
+.env
+.env.*
+!.env.example
+.local-notes/
+.release-check/
+proof/
+chatcut/*.json
+public/type-studies/portrait-cutout.webp
+public/type-studies/portrait-demo.png
+docs/type-studies/portrait-source.md
+public/demo-photos/mountains.jpg
+public/demo-photos/forest.jpg
+public/demo-photos/coast.jpg

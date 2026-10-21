@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {DEMOS,demoDefaults,demoStillFrame} from '../src/demos/catalog.js';
+import {parseValues,validateValues,dataValues,dataTime,dataEnter,dataOpacity,waterfallSteps,rankingAt,chartScale} from '../src/demos/data-motion.js';
+const demos=DEMOS.filter(d=>d.collection==='数据'&&Number(d.code)<=100);assert.equal(demos.length,18);assert.deepEqual(demos.map(d=>d.code),[...Array.from({length:8},(_,i)=>String(73+i).padStart(3,'0')),...Array.from({length:10},(_,i)=>String(91+i).padStart(3,'0'))]);
+for(const d of demos){const p=demoDefaults(d.id);assert.equal(p.images.length,0);assert(!validateValues(d.key,dataValues(p)));assert(dataEnter(dataTime(demoStillFrame(p),60))===1);for(const fps of[25,30,60])for(const speed of[.5,1,2]){assert.equal(dataTime(fps,fps,speed),dataTime(fps*2,fps*2,speed));const first=dataOpacity(0),last=dataOpacity(8-speed/fps);assert.equal(first,0);assert.equal(last,0);}}
+assert.equal(parseValues('1,,2'),null);assert.equal(parseValues('NaN,4'),null);assert.deepEqual(parseValues('1， -2, 3.5'),[1,-2,3.5]);assert(validateValues('donut',[0,0]));assert(validateValues('bars',[-3,2]));assert(validateValues('milestone',[101]));assert(validateValues('line',[4]));assert(validateValues('count',[1.5]));
+assert.deepEqual(waterfallSteps([100,25,-40,10]).at(-1),{start:0,end:95,delta:95,total:true});assert.equal(waterfallSteps([-20,-30,10]).at(-1).end,-40);
+for(const values of[[0,0,0],[4,4,4],[7,2,9]]){const rows=rankingAt(values,1);assert.deepEqual(rows.map(x=>x.value),values);assert.equal(new Set(rows.map(x=>x.rank)).size,values.length);for(const q of[0,.2,.5,.9,1])for(const row of rankingAt(values,q))assert(Number.isFinite(row.rank)&&Number.isFinite(row.value));}
+assert.deepEqual(rankingAt([10,30],0,[40,20]).map(x=>x.value),[40,20]);assert.deepEqual(rankingAt([10,30],1,[40,20]).map(x=>x.rank),[1,0]);
+for(const values of[[0,0],[5,5],[-40,-10],[-10,0,30]])for(const v of values)assert(Number.isFinite(chartScale(values)(v)));
+console.log('PASS: 18 data IDs, readable reduced-motion states, all frame-rate/speed loops, validated inputs, zero/negative baselines, reconciled waterfall totals, and editable ranking snapshots with stable ties.');

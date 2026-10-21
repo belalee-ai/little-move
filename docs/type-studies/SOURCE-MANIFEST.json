@@ -1,0 +1,42 @@
+{
+  "integratedAt": "2026-10-15",
+  "sourceDirectory": "Local Type Motion Lab reference archive (not distributed)",
+  "authority": "type-motion-lab.html",
+  "files": [
+    {
+      "file": "type-motion-lab.html",
+      "bytes": 986515,
+      "sha256": "6c4f8b789e6195bf76a1bc74c468d93c2ff1417362cc9d61c036262c7e464757"
+    },
+    {
+      "file": "english-type-motion.html",
+      "bytes": 76014,
+      "sha256": "7b3ac4db1fbca15668c43b39fd2a6a8b532c46fe898bb1fd1d47e66e19038b75"
+    },
+    {
+      "file": "expressive-type-motion.html",
+      "bytes": 63744,
+      "sha256": "b7ad052e39da0b0d89b8c327f9b77977c7a127823fb34ba0067725f55a88c9d2"
+    },
+    {
+      "file": "six-type-studies.html",
+      "bytes": 418039,
+      "sha256": "3319efdcfb97c73da2952af24c280a47192e7c663ac20416a34ee19a170e9512"
+    },
+    {
+      "file": "nine-type-studies.html",
+      "bytes": 422989,
+      "sha256": "62b6c151c17e2e4efa1f2afd8f9fc24fda2a3f66d765dc2843d8418fbe7da8c3"
+    },
+    {
+      "file": "type-style-review.md",
+      "bytes": 5996,
+      "sha256": "2e9628cbcdcc8358c898764b2fdbf1fa5c8b69f74b33e7cb8ae3d8aa4386625e"
+    },
+    {
+      "file": "sculptural-clock.webp",
+      "bytes": 40304,
+      "sha256": "35579bc7b40fe965516726e1ca1139c5914aae2bd0c0b14b6ceceee7a5d4807b"
+    }
+  ]
+}

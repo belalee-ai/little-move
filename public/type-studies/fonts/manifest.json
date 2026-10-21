@@ -1,0 +1,128 @@
+[
+  {
+    "family": "TypeMotionFlex",
+    "file": "TypeMotionFlex.ttf",
+    "weight": "100 1000",
+    "sha256": "85d5dbf3bc489ce2e1d9d87cf85e509f5309edb5554583eea21dbd5d7c5bca1e",
+    "bytes": 53532,
+    "names": [
+      {
+        "id": 1,
+        "text": "Roboto Flex"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "RobotoFlex-Regular"
+      }
+    ]
+  },
+  {
+    "family": "ExpressiveTypeFlex",
+    "file": "ExpressiveTypeFlex.ttf",
+    "weight": "100 1000",
+    "sha256": "65f33a5ce745a1008164436f158e80f22c95a1a224160db79b784fa2673457b1",
+    "bytes": 43760,
+    "names": [
+      {
+        "id": 1,
+        "text": "Roboto Flex"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "RobotoFlex-Regular"
+      }
+    ]
+  },
+  {
+    "family": "SixType",
+    "file": "SixType.ttf",
+    "weight": "100 1000",
+    "sha256": "c0652a6a3c6e1f8a0ff278b70dd9948ccd938dfcda49e2229b313d6ded05a4e8",
+    "bytes": 223184,
+    "names": [
+      {
+        "id": 1,
+        "text": "Roboto Flex"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "RobotoFlex-Regular"
+      }
+    ]
+  },
+  {
+    "family": "NineFlex",
+    "file": "NineFlex.ttf",
+    "weight": "100 1000",
+    "sha256": "c0652a6a3c6e1f8a0ff278b70dd9948ccd938dfcda49e2229b313d6ded05a4e8",
+    "bytes": 223184,
+    "names": [
+      {
+        "id": 1,
+        "text": "Roboto Flex"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "RobotoFlex-Regular"
+      }
+    ]
+  },
+  {
+    "family": "NineBlock",
+    "file": "NineBlock.ttf",
+    "weight": "400",
+    "sha256": "df64768553dec88b0ebdd29c3b24fe7f471b19dfbac03d02736cbd3bd700db4c",
+    "bytes": 9932,
+    "names": [
+      {
+        "id": 1,
+        "text": "Bungee"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "Bungee-Regular"
+      }
+    ]
+  },
+  {
+    "family": "NineSwash",
+    "file": "NineSwash.ttf",
+    "weight": "400",
+    "sha256": "e41a4b80ebe677273ce6fc0c6f68d6db69ee2ed27fd922816d356e4122b7a06d",
+    "bytes": 17492,
+    "names": [
+      {
+        "id": 1,
+        "text": "Shrikhand"
+      },
+      {
+        "id": 2,
+        "text": "Regular"
+      },
+      {
+        "id": 6,
+        "text": "Shrikhand-Regular"
+      }
+    ]
+  }
+]

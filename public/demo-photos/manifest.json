@@ -1,0 +1,264 @@
+{
+  "updated": "2026-10-15",
+  "purpose": "Every default image slot in 048–051 and 058–059 uses a different architectural photograph, including both comparison sides.",
+  "licenseReview": "Original work pages for all 15 current photographs and official Pexels/Unsplash license pages read on 2026-10-15. Website use and modification are covered by the photo licenses; no endorsement, trademark rights or separate property clearance is asserted.",
+  "photos": [
+    {
+      "file": "architecture-curve.jpg",
+      "description": "银白曲面建筑",
+      "source": "Unsplash",
+      "sourceId": "cwxvPWVTwcs",
+      "sourceUrl": "https://unsplash.com/photos/white-concrete-building-during-daytime-cwxvPWVTwcs",
+      "downloadUrl": "https://images.unsplash.com/photo-1582148166832-cd93a68688ad?auto=format&fit=crop&w=1800&q=88",
+      "photographer": "Mika Ruusunen",
+      "licenseReference": "https://unsplash.com/license",
+      "sha256": "fd10c2032a128b7c50a92fda979ec565d52df34e98fa7433e0d5f52512fcd388",
+      "bytes": 777303
+    },
+    {
+      "file": "architecture-stone.jpg",
+      "description": "暖灰石墙与曲线",
+      "source": "Pexels",
+      "sourceId": "30783645",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-curved-architecture-in-soft-neutrals-30783645/",
+      "downloadUrl": "https://images.pexels.com/photos/30783645/pexels-photo-30783645.jpeg?auto=compress&cs=srgb&w=1800",
+      "photographer": "Tiffany Christie Freeman",
+      "licenseReference": "https://www.pexels.com/license/",
+      "sha256": "d9c07260f61a9f06b22af186b5b6f367991a5457e0bc75dd16e8a534e7386e37",
+      "bytes": 289215
+    },
+    {
+      "file": "architecture-light.jpg",
+      "description": "混凝土与玻璃光影",
+      "source": "Pexels",
+      "sourceId": "29268176",
+      "sourceUrl": "https://www.pexels.com/photo/modern-curved-concrete-structure-with-glass-29268176/",
+      "downloadUrl": "https://images.pexels.com/photos/29268176/pexels-photo-29268176.jpeg?auto=compress&cs=srgb&w=1800",
+      "photographer": "yanping ma",
+      "licenseReference": "https://www.pexels.com/license/",
+      "sha256": "af226825457f108c52a46a6883c4bb20b586efd34e55a0b8f3faa695f1b3573a",
+      "bytes": 378607
+    },
+    {
+      "file": "architecture-arch-clouds.jpg",
+      "description": "白色拱门与云层",
+      "source": "Pexels",
+      "sourceId": "10909711",
+      "sourceUrl": "https://www.pexels.com/photo/white-concrete-arch-entrance-10909711/",
+      "downloadUrl": "https://images.pexels.com/photos/10909711/pexels-photo-10909711.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Jill Qin",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "048",
+      "sha256": "3de75e4f1f0eb490c755c7e3b84f626dbd7f0a03013bcb3ade82a6642e180df8",
+      "bytes": 146480
+    },
+    {
+      "file": "architecture-stair-light.jpg",
+      "description": "室内阶梯与光带",
+      "source": "Pexels",
+      "sourceId": "9712396",
+      "sourceUrl": "https://www.pexels.com/photo/modern-architecture-interior-with-steps-9712396/",
+      "downloadUrl": "https://images.pexels.com/photos/9712396/pexels-photo-9712396.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Nur Yilmaz",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "048",
+      "sha256": "eb17f0a51c2288302ad027fcd0cdadbc37edb897fecb89b9732a4d9702852494",
+      "bytes": 253740
+    },
+    {
+      "file": "architecture-wall-shadow.jpg",
+      "description": "黑白墙面与斜影",
+      "source": "Pexels",
+      "sourceId": "28298291",
+      "sourceUrl": "https://www.pexels.com/photo/a-black-and-white-photo-of-stairs-and-a-wall-28298291/",
+      "downloadUrl": "https://images.pexels.com/photos/28298291/pexels-photo-28298291.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "kadir yeşilbudak",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "048",
+      "sha256": "4dc7e605246b2f9a1fb3cf56da3a9046be3f5489dc31df4052f644e0c1309d96",
+      "bytes": 741822
+    },
+    {
+      "file": "architecture-golden-arch.jpg",
+      "description": "金色拱线与蓝天",
+      "source": "Pexels",
+      "sourceId": "30050991",
+      "sourceUrl": "https://www.pexels.com/photo/modern-abstract-arch-against-blue-sky-30050991/",
+      "downloadUrl": "https://images.pexels.com/photos/30050991/pexels-photo-30050991.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Laura Cleffmann",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "050",
+      "sha256": "d4f1074ddc740cf470ee0a31bc528785348bcdc996db92edfbd2f171063ce823",
+      "bytes": 161779
+    },
+    {
+      "file": "architecture-glass-facets.jpg",
+      "description": "玻璃切面与反射",
+      "source": "Pexels",
+      "sourceId": "12884318",
+      "sourceUrl": "https://www.pexels.com/photo/a-glass-building-with-geometric-design-12884318/",
+      "downloadUrl": "https://images.pexels.com/photos/12884318/pexels-photo-12884318.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Mathias Reding",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "051",
+      "sha256": "5465db367fbde982f5ce2378221e9b549e160195d865998c12e964236bdd132c",
+      "bytes": 324530
+    },
+    {
+      "file": "architecture-sky-concrete.jpg",
+      "description": "灰白建筑与流云",
+      "source": "Pexels",
+      "sourceId": "32699697",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-architecture-against-blue-sky-32699697/",
+      "downloadUrl": "https://images.pexels.com/photos/32699697/pexels-photo-32699697.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "July Nguyen",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "058",
+      "sha256": "5c67ecabb40a001873820e5ac9b36a6d4d65774d475a29433fa9f6b9a57660a5",
+      "bytes": 141031
+    },
+    {
+      "file": "architecture-stone-portal.jpg",
+      "description": "石质门洞与光影",
+      "source": "Pexels",
+      "sourceId": "12529744",
+      "sourceUrl": "https://www.pexels.com/photo/a-concrete-wall-with-arched-door-12529744/",
+      "downloadUrl": "https://images.pexels.com/photos/12529744/pexels-photo-12529744.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Francesco Ungaro",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "058",
+      "sha256": "c88a6f32897dc41a359dd96fd7192889ff827003e2974eb9f0475901808e0f6d",
+      "bytes": 370748
+    },
+    {
+      "file": "architecture-mirror-facade.jpg",
+      "description": "镜面立面与树影",
+      "source": "Pexels",
+      "sourceId": "20475618",
+      "sourceUrl": "https://www.pexels.com/photo/building-with-a-geometric-reflective-facade-20475618/",
+      "downloadUrl": "https://images.pexels.com/photos/20475618/pexels-photo-20475618.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Shivansh Sharma",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "058",
+      "sha256": "bb77d8269d61d74e8e230d8934eb212fa7c8d123d4ece464fd8eb45a5d0955dd",
+      "bytes": 352204
+    },
+    {
+      "file": "architecture-concrete-stairs.jpg",
+      "description": "混凝土阶梯与斜光",
+      "source": "Pexels",
+      "sourceId": "39031396",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-concrete-staircase-with-shadows-39031396/",
+      "downloadUrl": "https://images.pexels.com/photos/39031396/pexels-photo-39031396.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Mantas Sinkevičius",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "059",
+      "sha256": "807b532ed6a9f6bf753fc30181fb6d3af84acb62727de3824719d77e2071af51",
+      "bytes": 531612
+    },
+    {
+      "file": "architecture-white-facade.jpg",
+      "description": "白色立面与窗格",
+      "source": "Pexels",
+      "sourceId": "33317366",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-architecture-with-geometric-lines-33317366/",
+      "downloadUrl": "https://images.pexels.com/photos/33317366/pexels-photo-33317366.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Reinis Brūzītis",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "059",
+      "sha256": "c5df65d297704715e9a33a2adfe60fddcd2a761f6b0c22e25a7906b86bbdb44b",
+      "bytes": 469534
+    },
+    {
+      "file": "architecture-graphic-shadows.jpg",
+      "description": "楼梯与几何投影",
+      "source": "Pexels",
+      "sourceId": "30380818",
+      "sourceUrl": "https://www.pexels.com/photo/abstract-architectural-shadows-and-light-patterns-30380818/",
+      "downloadUrl": "https://images.pexels.com/photos/30380818/pexels-photo-30380818.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Mukhtar Shuaib Mukhtar",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "059",
+      "sha256": "7c327e2bc477708001b299a873ce15174e84d32bb50a5622a14c9c493d5cfbb4",
+      "bytes": 278683
+    },
+    {
+      "file": "architecture-sunlit-columns.jpg",
+      "description": "金色立柱与蓝天",
+      "source": "Pexels",
+      "sourceId": "29601980",
+      "sourceUrl": "https://www.pexels.com/photo/modern-architectural-facade-against-clear-blue-sky-29601980/",
+      "downloadUrl": "https://images.pexels.com/photos/29601980/pexels-photo-29601980.jpeg?auto=compress&cs=srgb&w=1600&q=85",
+      "photographer": "Jan van der Wolf",
+      "licenseReference": "https://www.pexels.com/license/",
+      "demo": "051",
+      "sha256": "7dafd05ebd8001c6dc82fb55db6634954d19dadc36de5519a5f01f77255e370d",
+      "bytes": 137434
+    }
+  ],
+  "legacyPhotos": [
+    {
+      "file": "mountains.jpg",
+      "description": "雪山峡谷",
+      "source": "Unsplash",
+      "sourceId": "photo-1464822759023-fed622ff2c3b",
+      "sourceUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=85&fit=crop",
+      "licenseReference": "https://unsplash.com/license",
+      "photographer": null,
+      "sha256": "a93eb2dfec3896f31ee685c854499073da01bd8c95cef2bc83891b7d8bc071f2",
+      "bytes": 454844
+    },
+    {
+      "file": "forest.jpg",
+      "description": "森林光线",
+      "source": "Unsplash",
+      "sourceId": "photo-1441974231531-c6227db76b6e",
+      "sourceUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=85&fit=crop",
+      "licenseReference": "https://unsplash.com/license",
+      "photographer": null,
+      "sha256": "2eb4d5f945cf24faa93f157ddf3ad25fb738ea98577efb99cc000777743665d1",
+      "bytes": 573211
+    },
+    {
+      "file": "coast.jpg",
+      "description": "海岸日落",
+      "source": "Unsplash",
+      "sourceId": "photo-1475924156734-496f6cac6ec1",
+      "sourceUrl": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=1600&q=85&fit=crop",
+      "licenseReference": "https://unsplash.com/license",
+      "photographer": null,
+      "sha256": "06e6fdfe677a3811c13a67bf5558581099a625949f033c9704513d3bf7fdb2e5",
+      "bytes": 229652
+    }
+  ],
+  "legacyLicenseReview": "Official Unsplash license FAQ index read; the detailed commercial-use and attribution articles could not be fetched because of network errors. Do not treat this record as a complete commercial clearance.",
+  "demoSets": {
+    "048": [
+      "architecture-arch-clouds.jpg",
+      "architecture-stair-light.jpg",
+      "architecture-wall-shadow.jpg"
+    ],
+    "049": [
+      "architecture-curve.jpg",
+      "architecture-stone.jpg",
+      "architecture-light.jpg"
+    ],
+    "050": [
+      "architecture-golden-arch.jpg"
+    ],
+    "051": [
+      "architecture-glass-facets.jpg",
+      "architecture-sunlit-columns.jpg"
+    ],
+    "058": [
+      "architecture-sky-concrete.jpg",
+      "architecture-stone-portal.jpg",
+      "architecture-mirror-facade.jpg"
+    ],
+    "059": [
+      "architecture-concrete-stairs.jpg",
+      "architecture-white-facade.jpg",
+      "architecture-graphic-shadows.jpg"
+    ]
+  }
+}

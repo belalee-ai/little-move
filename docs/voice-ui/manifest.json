@@ -1,0 +1,122 @@
+[
+  {
+    "code": "166",
+    "key": "mic-capsule",
+    "name": "话筒展开",
+    "category": "语音控件",
+    "prompt": "点击话筒，圆形按钮舒展为聆听胶囊，音柱随示例语音起伏；再次点击沿原路收回。",
+    "reference": "https://support.apple.com/guide/iphone/make-a-recording-iph4d2a39a3b/ios",
+    "implementation": "independent",
+    "composition": "Demo166"
+  },
+  {
+    "code": "167",
+    "key": "push-talk",
+    "name": "按住说话",
+    "category": "语音控件",
+    "prompt": "按住话筒开始说话，声波与计时同步推进；松手生成语音，上滑取消并回到待机。",
+    "reference": "https://support.apple.com/guide/iphone/send-and-receive-audio-messages-iph2e42d3117/ios",
+    "implementation": "independent",
+    "composition": "Demo167"
+  },
+  {
+    "code": "168",
+    "key": "memo-panel",
+    "name": "录音面板",
+    "category": "语音控件",
+    "prompt": "录音按钮由圆点变为暂停符号，波形沿时间滚动；暂停冻结时长，继续累积，完成后收起。",
+    "reference": "https://support.apple.com/guide/iphone/make-a-recording-iph4d2a39a3b/ios",
+    "implementation": "independent",
+    "composition": "Demo168"
+  },
+  {
+    "code": "169",
+    "key": "voice-orb",
+    "name": "语音对话球",
+    "category": "语音控件",
+    "prompt": "语音球在聆听、思考和回答之间连续变形，轮廓与音量联动，各状态保持清楚区别。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/feedback",
+    "implementation": "independent",
+    "composition": "Demo169"
+  },
+  {
+    "code": "170",
+    "key": "voice-message",
+    "name": "语音消息",
+    "category": "语音控件",
+    "prompt": "点击播放语音，波形逐段点亮、游标与时间同步前进；暂停保留进度，拖动可定位。",
+    "reference": "https://support.apple.com/guide/iphone/send-and-receive-audio-messages-iph2e42d3117/ios",
+    "implementation": "independent",
+    "composition": "Demo170"
+  },
+  {
+    "code": "171",
+    "key": "call-mute",
+    "name": "通话静音",
+    "category": "语音控件",
+    "prompt": "点击话筒切换静音，斜线连续划过图标、声波回落；取消静音后恢复起伏，挂断后收尾。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+    "implementation": "independent",
+    "composition": "Demo171"
+  },
+  {
+    "code": "172",
+    "key": "ios-context",
+    "name": "长按快捷菜单",
+    "category": "苹果交互",
+    "prompt": "按住内容卡片，卡片轻微抬起、背景减弱，快捷菜单从卡片旁展开；选择或取消后原路收回。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/context-menus",
+    "implementation": "independent",
+    "composition": "Demo172"
+  },
+  {
+    "code": "173",
+    "key": "ios-swipe",
+    "name": "左滑操作",
+    "category": "苹果交互",
+    "prompt": "列表行跟随手指左滑，归档与标记操作从后方露出；松手吸附，选择后行内容反馈并允许还原。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+    "implementation": "independent",
+    "composition": "Demo173"
+  },
+  {
+    "code": "174",
+    "key": "ios-wheel",
+    "name": "滚轮选择器",
+    "category": "苹果交互",
+    "prompt": "日期式滚轮随拖动连续滚动，中心项清晰、边缘项按透视收窄；松手携带惯性吸附到整数项。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/pickers",
+    "implementation": "independent",
+    "composition": "Demo174"
+  },
+  {
+    "code": "175",
+    "key": "ios-volume",
+    "name": "竖向音量条",
+    "category": "苹果交互",
+    "prompt": "拖动竖向音量条，填充和喇叭声纹同步变化；按下轻微舒展，松手柔和复位，支持键盘调节。",
+    "reference": "https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios",
+    "implementation": "independent",
+    "composition": "Demo175"
+  },
+  {
+    "code": "176",
+    "key": "ios-refresh",
+    "name": "下拉刷新",
+    "category": "苹果交互",
+    "prompt": "下拉列表带动箭头转向，超过阈值松手开始旋转加载，内容更新后列表连续回到原位。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators",
+    "implementation": "independent",
+    "composition": "Demo176"
+  },
+  {
+    "code": "177",
+    "key": "ios-search",
+    "name": "搜索栏展开",
+    "category": "苹果交互",
+    "prompt": "点进搜索栏，取消按钮顺势让出空间，结果按输入更新；取消清空内容并收回为原始搜索栏。",
+    "reference": "https://developer.apple.com/design/human-interface-guidelines/search-fields",
+    "implementation": "independent",
+    "composition": "Demo177"
+  }
+]

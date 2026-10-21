@@ -1,0 +1,12 @@
+import React,{useEffect,useState} from 'react';
+import type {DemoProps} from '../DemoMotion';
+import {BATCH_TEXT_KEYS,BATCH_DATA_KEYS} from './catalog.js';
+import {batchDataError,batchNumbers} from './motion.js';
+const hints:Record<string,string>={dumbbell:'每组：之前,之后；每组0–100。',slope:'每组：之前,之后；每组0–100。',interval:'每组：最低,中值,最高；依次递增。',boxplot:'每组：最小,下四分位,中位,上四分位,最大。',histogram:'每项是一个连续区间的频数，标签填写区间。',ridgeline:'每组连续填写6个样本，最多4组；轮廓为核密度示意。',beeswarm:'每个数值对应一条样本记录，最多50条。',funnel:'每项是一个阶段人数，按流程递减。',sankey:'固定3×3流量矩阵，逐行填写9个流量；标签为3个来源和3个去向。',arcnetwork:'六条边依次为A–B、A–D、B–C、B–E、C–E、D–E的强度。',waffle:'填写各组数量，自动归一化为100格，余数按最大余额法分配。',pictogram:'一个符号表示一个单位；每行0–12，支持小数。',bullet:'每组：当前值,目标值；0–100，背景分区为40/75/100。',candles:'每期：开盘,收盘,最低,最高。',parallel:'每个实体连续填4个维度数值，均为0–100；标签为4个维度名。'};
+export const BatchSettings:React.FC<{value:DemoProps;onChange:(p:DemoProps)=>void;kind:string}>=({value,onChange,kind})=>{
+ const [raw,setRaw]=useState(value.dataValues??''),[labels,setLabels]=useState(value.dataLabels??''),[error,setError]=useState('');
+ useEffect(()=>{setRaw(value.dataValues??'');setLabels(value.dataLabels??'');setError('');},[value.demo,value.dataValues,value.dataLabels]);
+ if(BATCH_TEXT_KEYS.includes(kind))return <div>{!['drawtype','punctuation'].includes(kind)&&<label className="study-asset">演示文字<textarea aria-label="扩展文字内容" value={value.motionText??''} maxLength={kind==='crossword'?8:kind==='infinity'?11:kind==='footnote'?12:kind==='rewrite'?30:60} rows={3} onChange={e=>onChange({...value,motionText:kind==='weave'?e.target.value.split('\n').slice(0,2).map(v=>Array.from(v).slice(0,7).join('')).join('\n'):e.target.value})}/></label>}<p className="study-form-note">{kind==='drawtype'?'保留手绘笔画结构，当前固定为hello字形。':kind==='punctuation'?'标点由几何轮廓绘制，保持固定形态。':kind==='subtitle'?'每行一句，最多三行。':kind==='weave'?'两行文字，每行最多七个字符。':kind==='connector'?'三个词用逗号分隔。':'可替换短语；长文会自动缩小。'}</p></div>;
+ if(!BATCH_DATA_KEYS.includes(kind))return null;
+ return <form className="data-settings" onSubmit={e=>{e.preventDefault();const message=batchDataError(kind,batchNumbers(raw));if(message){setError(message);return;}onChange({...value,dataValues:raw,dataLabels:labels});setError('');}}><label>演示数值<textarea aria-label="扩展图表数值" rows={3} value={raw} onChange={e=>setRaw(e.target.value)}/></label><label>标签<input aria-label="扩展图表标签" value={labels} onChange={e=>setLabels(e.target.value)} maxLength={120}/></label><button type="submit">应用图表数据</button><span>{hints[kind]}</span>{error&&<p role="alert">{error}</p>}</form>;
+};

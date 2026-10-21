@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "fonts": [
+    {
+      "file": "ChillRoundF.ttf",
+      "name": "寒蝉全圆体",
+      "family": "Chill Round F",
+      "version": "3.0",
+      "project": "https://github.com/Warren2060/ChillRound",
+      "download": "https://raw.githubusercontent.com/Warren2060/ChillRound/main/ChillRoundF%20v3.0.ttf",
+      "license": "ChillRoundF-OFL.txt",
+      "bytes": 6168772,
+      "sha256": "7dae804b344f7bc1a1c8426b9515e9b54d7baac3e123263d0bae94d0a305a732"
+    },
+    {
+      "file": "Xiaolai-Regular.ttf",
+      "name": "小赖手写体",
+      "family": "Xiaolai",
+      "version": "3.126",
+      "project": "https://github.com/lxgw/kose-font",
+      "download": "https://github.com/lxgw/kose-font/releases/download/v3.126/Xiaolai-Regular.ttf",
+      "license": "Xiaolai-OFL.txt",
+      "bytes": 22220806,
+      "sha256": "e2f68daf0e72777a8cf58bc83de1b98634b251e537ddbfca24b0ae50d1802da2"
+    },
+    {
+      "file": "LXGWWenKai-Regular.ttf",
+      "name": "霞鹜文楷 Lite",
+      "family": "LXGW WenKai Lite",
+      "version": "1.522",
+      "project": "https://github.com/lxgw/LxgwWenKai-Lite",
+      "download": "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.522/LXGWWenKaiLite-Regular.ttf",
+      "license": "LXGWWenKai-OFL.txt",
+      "bytes": 13872424,
+      "sha256": "140c99ba4e28e817cec49bf82a0c5fcdc4fe633fb9dfda16d0ee8d59a8545f15"
+    },
+    {
+      "file": "SmileySans-Oblique.ttf",
+      "name": "得意黑",
+      "family": "Smiley Sans Oblique",
+      "version": "2.0.1",
+      "project": "https://github.com/atelier-anchor/smiley-sans",
+      "download": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
+      "license": "SmileySans-OFL.txt",
+      "bytes": 2629764,
+      "sha256": "b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4"
+    }
+  ]
+}

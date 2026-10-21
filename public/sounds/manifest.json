@@ -1,0 +1,61 @@
+{
+  "provenance": "Independently synthesized by this project; no third-party samples.",
+  "files": [
+    {
+      "id": "tap",
+      "file": "tap.wav",
+      "seconds": 0.075,
+      "sampleRate": 48000,
+      "peak": 0.50174
+    },
+    {
+      "id": "tick",
+      "file": "tick.wav",
+      "seconds": 0.045,
+      "sampleRate": 48000,
+      "peak": 0.29253
+    },
+    {
+      "id": "sweep",
+      "file": "sweep.wav",
+      "seconds": 0.44,
+      "sampleRate": 48000,
+      "peak": 0.35057
+    },
+    {
+      "id": "land",
+      "file": "land.wav",
+      "seconds": 0.23,
+      "sampleRate": 48000,
+      "peak": 0.44692
+    },
+    {
+      "id": "chime",
+      "file": "chime.wav",
+      "seconds": 0.42,
+      "sampleRate": 48000,
+      "peak": 0.4305
+    },
+    {
+      "id": "glitch",
+      "file": "glitch.wav",
+      "seconds": 0.16,
+      "sampleRate": 48000,
+      "peak": 0.30458
+    },
+    {
+      "id": "error",
+      "file": "error.wav",
+      "seconds": 0.22,
+      "sampleRate": 48000,
+      "peak": 0.30329
+    },
+    {
+      "id": "paper",
+      "file": "paper.wav",
+      "seconds": 0.24,
+      "sampleRate": 48000,
+      "peak": 0.33443
+    }
+  ]
+}

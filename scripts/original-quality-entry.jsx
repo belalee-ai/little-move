@@ -1,0 +1,14 @@
+import React,{useEffect,useState} from 'react';
+import {Composition,registerRoot,Freeze,useCurrentFrame,delayRender,continueRender,spring} from 'remotion';
+import {DEFAULTS,EFFECTS,previewFrames,previewFps} from '../src/motion-core.js';
+import {TextVisual} from '../src/TextVisual.jsx';
+import {loadPreviewFonts} from '../src/fonts';
+import {STUDIES,studyDefaults} from '../src/studies/catalog.js';
+import {StudyMotion} from '../src/StudyMotion';
+import {DEMOS,demoDefaults} from '../src/demos/catalog.js';
+import {DemoMotion} from '../src/DemoMotion';
+const items=[...EFFECTS.map(e=>({...e,type:'text'})),...STUDIES.map(e=>({...e,type:'study'})),...DEMOS.filter(e=>+e.code<=177).map(e=>({...e,type:'demo'}))].sort((a,b)=>+a.code-+b.code);
+const times=[.03,.13,.28,.48,.72,.97];
+function Grid({page=0}){const[handle]=useState(()=>delayRender('Original audit fonts'));useEffect(()=>{loadPreviewFonts().then(()=>continueRender(handle));},[handle]);return <div style={{position:'absolute',inset:0,background:'#e4e5e3',fontFamily:'Arial'}}>{items.slice(page*6,page*6+6).map((m,row)=>times.map((f,col)=>{const w=m.width??900,h=m.height??520,props=m.type==='text'?{...DEFAULTS,color:'#181717',accent:'#6B6965',background:'#FAF9F6',effect:m.id}:m.type==='study'?studyDefaults(m.id):demoDefaults(m.id),fps=m.type==='text'?previewFps(m.id):60,duration=m.type==='text'?previewFrames(props,fps)/fps:m.seconds??8,frame=Math.floor(f*duration*fps);return <div key={m.code+'-'+col} style={{position:'absolute',left:col*500+5,top:row*335+5,width:490,height:325}}><div style={{fontSize:16,height:26}}>{m.code} {m.name} · {(frame/fps).toFixed(2)}s</div><div style={{position:'relative',width:w,height:h,transform:`scale(${Math.min(490/w,295/h)})`,transformOrigin:'top left',overflow:'hidden'}}>{m.type==='text'?<TextVisual props={props} frame={frame} fps={fps} durationInFrames={Math.round(duration*fps)} spring={spring}/>:<Freeze frame={frame}>{m.type==='study'?<StudyMotion {...props}/>:<DemoMotion {...props}/>}</Freeze>}</div></div>;}))}</div>}
+function MotionReview(){return <div style={{position:'absolute',inset:0,background:'#e4e5e3',fontFamily:'Arial'}}>{['103','126','129','151'].map((code,i)=>{const m=items.find(x=>x.code===code);return <div key={code} style={{position:'absolute',left:i%2*800,top:Math.floor(i/2)*530,width:800,height:530}}><div style={{height:30,fontSize:21}}>{m.code} {m.name}</div><div style={{position:'relative',width:800,height:500,overflow:'hidden'}}><DemoMotion {...demoDefaults(m.id)}/></div></div>;})}</div>}
+registerRoot(()=> <><Composition id="OriginalQuality" component={Grid} width={3000} height={2010} fps={60} durationInFrames={600} defaultProps={{page:0}}/><Composition id="OriginalMotionReview" component={MotionReview} width={1600} height={1060} fps={60} durationInFrames={480}/></>);

@@ -1,0 +1,11 @@
+import React from 'react';
+import {Img,staticFile} from 'remotion';
+import type {DemoProps} from '../DemoMotion';
+export const abs:React.CSSProperties={position:'absolute'};
+export const control:React.CSSProperties={font:'inherit',border:0,background:'#fff',color:'#30383b',borderRadius:12,padding:'12px 22px',cursor:'pointer',boxShadow:'0 1px 0 #20202010'};
+export const Surface:React.FC<{children:React.ReactNode;style?:React.CSSProperties}>=({children,style})=><div style={{...abs,inset:'65px 85px',borderRadius:20,background:'#fff',boxShadow:'0 12px 28px #22222208',...style}}>{children}</div>;
+export const ImageLayer:React.FC<{p:DemoProps;i?:number;style?:React.CSSProperties}>=({p,i=0,style})=>{const url=p.images?.[i%Math.max(1,p.images?.length??1)];return url?<Img src={url.startsWith('/')?staticFile(url.slice(1)):url} style={{width:'100%',height:'100%',objectFit:p.fit??'cover',display:'block',...style}}/>:null;};
+export const Svg:React.FC<{children:React.ReactNode;style?:React.CSSProperties}>=({children,style})=><svg width="800" height="500" viewBox="0 0 800 500" style={{display:'block',fontFamily:'Noto Sans SC, sans-serif',fontVariantNumeric:'tabular-nums',...style}}>{children}</svg>;
+export const T:React.FC<{x:number;y:number;children:React.ReactNode;size?:number;fill?:string;anchor?:'start'|'middle'|'end';style?:React.CSSProperties}>=({x,y,children,size=20,fill='#30383b',anchor='start',style})=><text x={x} y={y} fill={fill} textAnchor={anchor} style={{fontSize:size,fontWeight:450,...style}}>{children}</text>;
+export const Skeleton:React.FC<{x?:number;y?:number;width?:number;rows?:number}>=({x=28,y=95,width=220,rows=3})=><>{Array.from({length:rows},(_,i)=><div key={i} style={{...abs,left:x,top:y+i*25,height:7,width:width*(1-i*.15),borderRadius:6,background:'#e8e9e6'}}/>)}</>;
+export const Hint:React.FC<{children:React.ReactNode}>=({children})=><div role="status" style={{...abs,left:100,right:100,bottom:34,textAlign:'center',fontSize:14,color:'#7d8482'}}>{children}</div>;

@@ -19,3 +19,10 @@
 原有 177 项和新增 113 项此前已分批检查默认配置阶段帧、关键视频与手动操作，摘要见 ORIGINAL-QUALITY.md 与 COVERAGE-QUALITY.md。完整 proof/ 是本地过程证据，未随公开版分发；这些文档中的 proof/ 路径仅供本地维护者使用。
 
 本次发布没有重新渲染全部 290 条完整视频，也没有逐项实测所有自定义参数、所有浏览器或操作系统。
+
+## GitHub 回读与重新安装
+
+- 公开仓库：https://github.com/belalee-ai/little-move ，main 分支。未登录访问返回 HTTP 200。
+- GitHub 页面上实际打开 README，确认文字与截图正常渲染。
+- 从上述 GitHub 地址重新浅克隆到独立目录，运行 npm ci、npm run check 和 npm run build：均通过。没有复用该目录之外的 node_modules。
+- 未部署 GitHub Pages 或其他在线演示站点；当前发布的是可下载、可本地运行的源码仓库。

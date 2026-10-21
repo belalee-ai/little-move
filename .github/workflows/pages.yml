@@ -11,6 +11,7 @@ on:
       - 'package*.json'
       - 'tsconfig.json'
       - 'scripts/check-web-build.mjs'
+      - 'scripts/check-pixel-field.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -33,6 +34,7 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: node scripts/check-coverage.mjs
+      - run: node scripts/check-pixel-field.mjs
       - run: npm run build
         env:
           DEPLOY_BASE: /little-move/

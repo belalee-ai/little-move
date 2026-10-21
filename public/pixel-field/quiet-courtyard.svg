@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="840" viewBox="0 0 1440 840">
+<title>Quiet courtyard — original architectural illustration for Little Move 291</title>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d9e0e0"/><stop offset="1" stop-color="#f0eee8"/></linearGradient>
+ <linearGradient id="wall"><stop stop-color="#e4dfd4"/><stop offset="1" stop-color="#b6b1a5"/></linearGradient>
+ <linearGradient id="inside" x2="1" y2=".3"><stop stop-color="#3d4540"/><stop offset="1" stop-color="#8a9283"/></linearGradient>
+ <linearGradient id="floor" x2="1" y2="1"><stop stop-color="#ded9cd"/><stop offset="1" stop-color="#b3ad9e"/></linearGradient>
+</defs>
+<path fill="url(#sky)" d="M0 0h1440v840H0z"/>
+<path fill="#c5c9c0" d="M0 420l500-250 940 210v460H0z"/>
+<path fill="url(#floor)" d="M0 560h1440v280H0z"/>
+<path fill="url(#wall)" fill-rule="evenodd" d="M80 70h1190v620H80z M260 690V355a170 170 0 0 1 340 0v335z M760 690V355a170 170 0 0 1 340 0v335z"/>
+<path fill="url(#inside)" d="M260 690V355a170 170 0 0 1 340 0v335z M760 690V355a170 170 0 0 1 340 0v335z"/>
+<path fill="#c4c1b5" d="M260 690h340V415L458 541H260z M760 690h340V415L960 541H760z"/>
+<path fill="#edebe2" d="M80 70l58-30h1190l-58 30z"/>
+<path fill="#999b8d" d="M1270 70l58-30v620l-58 30z"/>
+<path fill="#716f61" opacity=".18" d="M80 690h1190l170 150H320z"/>
+<path fill="#e9e5d9" d="M0 666h240v42H0z M0 708h291v44H0z M0 752h344v44H0z M0 796h397v44H0z"/>
+<path fill="#aaa596" d="M0 701h240v7H0z M0 745h291v7H0z M0 789h344v7H0z M0 833h397v7H0z"/>
+<path fill="#9a5d46" d="M638 488h42v202h-42z"/>
+<circle cx="659" cy="480" r="35" fill="#b98061"/>
+<path d="M176 70v550M690 70v395M1165 70v550M80 139h1190" stroke="#9d9d91" stroke-opacity=".2" fill="none"/>
+</svg>

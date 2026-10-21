@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T09:23:28.625Z",
+  "generatedAt": "2026-10-21T10:08:01.687Z",
   "schedule": "codex-desktop-heartbeat",
   "schedulePolicy": {
     "provider": "codex-desktop-heartbeat",
@@ -11,20 +11,10 @@
   "quantityLimit": null,
   "minimumAccepted": 0,
   "publishMode": "auto-publish",
-  "implemented": 290,
+  "implemented": 291,
   "categories": 30,
-  "nextCode": "291",
+  "nextCode": "292",
   "candidates": [
-    {
-      "key": "image-pixel-distortion",
-      "name": "图片像素扰动",
-      "collection": "图片与图形",
-      "signature": "image-pixel-displacement-pointer",
-      "source": "https://tympanus.net/Development/DistortedPixels/index3.html",
-      "status": "discovered",
-      "license": "未使用上游代码或图片；若采用须单独核验",
-      "notes": "搜索结果已读，动态原Demo待验；不能和041文字像素笔画混为一项。"
-    },
     {
       "key": "image-scroll-grain",
       "name": "滚动扭曲与颗粒",
@@ -46,9 +36,11 @@
       "notes": "原文机制已读取。与054详情展开有重叠，优先评估作为054的扩展版本，不自动新增编号。"
     }
   ],
-  "duplicates": [],
+  "duplicates": [
+    "image-pixel-distortion"
+  ],
   "counts": {
-    "discovered": 3
+    "discovered": 2
   },
   "note": "脚本只盘点字段、编号和显式特征；语义去重、来源许可、真实预览和质量验收由维护者执行。配置描述维护安排，不启动调度、不检索网络、不修改网站、不发布。定时运行由维护者的 Codex App 配置。"
 }

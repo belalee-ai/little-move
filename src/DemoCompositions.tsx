@@ -126,4 +126,5 @@ export const DemoCompositions=()=> <>
  <Composition id="Demo176" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-ios-refresh')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
  <Composition id="Demo177" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-ios-search')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
 {DEMOS.filter(d=>isCoverage(d.id)).map(d=><Composition key={d.id} id={'Demo'+d.code} component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults(d.id)} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>)}
+ <Composition id="Demo291" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-pixel-field')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
 </>;

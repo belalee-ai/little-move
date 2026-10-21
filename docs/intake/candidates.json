@@ -7,9 +7,13 @@
       "collection": "图片与图形",
       "signature": "image-pixel-displacement-pointer",
       "source": "https://tympanus.net/Development/DistortedPixels/index3.html",
-      "status": "discovered",
-      "license": "未使用上游代码或图片；若采用须单独核验",
-      "notes": "搜索结果已读，动态原Demo待验；不能和041文字像素笔画混为一项。"
+      "status": "accepted",
+      "license": "原仓库 MIT 许可已核验；本项独立使用 SVG 实现，未复制上游代码、字体或图片；默认图为本项目原创建筑示意 SVG。",
+      "notes": "实际移动指针确认块状错位与衰减；已收录 291，支持换图、幅度、键盘、减少动态效果。验证摘要见 docs/intake/UPDATES.md。",
+      "code": "291",
+      "author": "Yuri Artiukh / akella",
+      "checkedAt": "2026-10-21",
+      "article": "https://tympanus.net/codrops/?p=58318"
     },
     {
       "key": "image-scroll-grain",

@@ -1,12 +1,12 @@
 # Little Move
 
-![Little Move 项目介绍：先看动效，再说需求。290 个 Demo、30 个动作分类，可预览、调参、复制提示词与选择音效](docs/images/project-intro.svg)
+![Little Move 项目介绍：先看动效，再说需求。291 个 Demo、30 个动作分类，可预览、调参、复制提示词与选择音效](docs/images/project-intro.svg)
 
-[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![290 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
+[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![291 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
 
 **先看动效，再说需求。**
 
-一个可以直接打开的动效词典。把“想要那种感觉”变成看得见的参考：**290 个 Demo、30 个动作分类**，覆盖文字、图片与图形、布局、控件和数据。
+一个可以直接打开的动效词典。把“想要那种感觉”变成看得见的参考：**291 个 Demo、30 个动作分类**，覆盖文字、图片与图形、布局、控件和数据。
 
 [**打开在线动效库 ↗**](https://belalee-ai.github.io/little-move/) · [看效果](#效果一览) · [怎么用](#三步找到你要的动作) · [本地运行](docs/GETTING-STARTED.md) · [完整目录](CATALOG.md) · [持续更新](#持续更新)
 
@@ -96,9 +96,9 @@
 
 | 文字 | 创意字体 | 图片与图形 | 布局 | 交互 | 数据 |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 53 | 41 | 47 | 16 | 70 | 63 |
+| 53 | 41 | 48 | 16 | 70 | 63 |
 
-30 个动作分类均不少于 8 项。所有卡片支持搜索、预览与简短动作说明；具体可调参数依各效果而定。[查看 001–290 完整目录](CATALOG.md)。
+30 个动作分类均不少于 8 项。所有卡片支持搜索、预览与简短动作说明；具体可调参数依各效果而定。[查看 001–291 完整目录](CATALOG.md)。
 
 ## 想把它用进自己的项目
 
@@ -128,6 +128,8 @@ npm run dev -- --port 3108
 - 支持系统“减少动态效果”；在可见范围内播放预览，音效由用户主动开启。
 - 自有代码按 [MIT](LICENSE) 提供；字体、摄影和 Remotion 依赖遵循各自许可，详见[许可与素材](docs/LICENSING.md)。
 - 验证范围见[发布检查](docs/RELEASE-CHECK.md)。未声称所有浏览器、设备、参数组合或 Agent 都已完整实测。
+
+最近新增 **291 · 图片像素扰动**：图片局部方块随指针错位、拖尾并复原，支持换图、调节幅度和方向键体验。[看本轮更新与验证](docs/intake/UPDATES.md)。
 
 ## 持续更新
 

@@ -21,3 +21,5 @@ Remotion 使用单独的许可，不能把本仓库称为“所有内容均 MIT�
 当前 036–038 是丝带、弹球和纸面，不使用人物。公开仓库不包含历史个人照片、生成的人物图片或旧照片素材；旧来源记录中的 legacyPhotos 仅用于识别历史配置，不代表这些文件随仓库提供。
 
 参考网站与同名动作仅用于溯源和理解通用机制，不表示获得其商业字体、付费组件或整套模板的授权。详细历史核查见 THIRD-PARTY-NOTICES.md；LICENSE-AUDIT.md 仅记录 2026-10-15 对最初 30 项的核查，不代表后来全部词条的法律鉴定。
+
+291 的默认素材 `public/pixel-field/quiet-courtyard.svg` 是本项目原创建筑示意插画。该动效参考 Yuri Artiukh 的 [Pixel Distortion Demo](https://tympanus.net/Development/DistortedPixels/index3.html) 的通用机制，独立以 SVG 采样与帧时钟实现；未复制其 Three.js 代码、字体或脑部渲染图。上游 [MIT 许可](https://github.com/akella/DistortedPixels/blob/master/LICENSE) 于 2026-10-21 核验。

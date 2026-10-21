@@ -1,3 +1,4 @@
+import {PixelFieldScene} from './pixel-field/PixelFieldScene';
 import {CoverageScene} from './coverage/CoverageScene';
 import {isCoverage} from './coverage/catalog.js';
 import {MotionSound,type SoundProps} from './MotionSound';
@@ -24,8 +25,9 @@ import {AbsoluteFill,Img,staticFile,useCurrentFrame,useVideoConfig} from 'remoti
 import {demoById,demoDefaults,demoState,mix,clamp} from './demos/catalog.js';
 import {cue,mod} from './demos/motion.js';
 import {revealPhotoState,loopFocus} from './demos/image-motion.js';
-export type DemoInput={x:number;y:number;progress:number;index:number;active:boolean;vx?:number;vy?:number;transition?:{from:DemoInput;frame:number;duration?:number;kind?:'pointer'|'layout'|'snap';velocity?:number}};
-export type DemoProps=SoundProps&{demo:string;speed?:number;strength?:number;background?:string;accent?:string;title?:string;fit?:'contain'|'cover';images?:string[];input?:DemoInput;native?:NativeControls;dataValues?:string;dataStartValues?:string;dataLabels?:string;unit?:string;motionText?:string;replacementText?:string;verifyTolerance?:number;voiceStyle?:'live'|'timeline';audioSrc?:string;audioName?:string;audioDuration?:number;audioEnvelope?:number[]};
+export type FieldTrailPoint={x:number;y:number;vx:number;vy:number;frame:number;weight:number};
+export type DemoInput={fieldTrail?:FieldTrailPoint[];x:number;y:number;progress:number;index:number;active:boolean;vx?:number;vy?:number;transition?:{from:DemoInput;frame:number;duration?:number;kind?:'pointer'|'layout'|'snap';velocity?:number}};
+export type DemoProps=SoundProps&{demo:string;reducedMotion?:boolean;speed?:number;strength?:number;background?:string;accent?:string;title?:string;fit?:'contain'|'cover';images?:string[];input?:DemoInput;native?:NativeControls;dataValues?:string;dataStartValues?:string;dataLabels?:string;unit?:string;motionText?:string;replacementText?:string;verifyTolerance?:number;voiceStyle?:'live'|'timeline';audioSrc?:string;audioName?:string;audioDuration?:number;audioEnvelope?:number[]};
 const box:React.CSSProperties={position:'absolute',overflow:'hidden'};
 const themes=['#bad1d7','#eed0b7','#dce4d2','#d6c9dc','#e6c7be','#ccd8c1'];
 export const DemoMotion:React.FC<DemoProps>=props=>{
@@ -65,6 +67,7 @@ export const DemoMotion:React.FC<DemoProps>=props=>{
  if(APPLE_CONTROL_KEYS.includes(meta.key))scene=<AppleControls p={p} t={t} kind={meta.key}/>;
  if(meta.key==='voice')scene=<VoiceScene p={p} frame={frame} fps={fps}/>;
  if(FEEDBACK_KEYS.includes(meta.key))scene=<FeedbackScene p={p} t={t} kind={meta.key} state={s}/>;
+ if(meta.key==='pixel-field')scene=<PixelFieldScene p={p} frame={frame} fps={fps}/>;
  if(isCoverage(p.demo))scene=<CoverageScene p={p} t={t}/>;
  return <AbsoluteFill data-demo={meta.key} data-demo-frame={frame} data-demo-index={s.index} style={{background:p.background,color:['grid','bento','expand','accordion','tilt','magnet','follow','drag','press','input','switch','tabs'].includes(meta.key)?'#242528':'#253f40',fontFamily:'Arial, sans-serif',overflow:'hidden'}}>{scene}<MotionSound id={p.demo} settings={p} soundPreset={p.soundPreset} soundVolume={p.soundVolume}/></AbsoluteFill>;
 };

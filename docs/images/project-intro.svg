@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
 <title id="title">Little Move · 先看动效，再说需求。</title>
-<desc id="desc">290 个 Demo、30 个动作分类。覆盖文字、图片与图形、布局、控件和数据，可在线预览、复制提示词、选择音效并调整参数。这是项目介绍图，真实界面见下方截图。</desc>
+<desc id="desc">291 个 Demo、30 个动作分类。覆盖文字、图片与图形、布局、控件和数据，可在线预览、复制提示词、选择音效并调整参数。这是项目介绍图，真实界面见下方截图。</desc>
 <rect width="1600" height="760" fill="#f7f6f2"/>
 <path d="M0 0H1600" stroke="#20211f" stroke-width="12"/>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" fill="#20211f">
@@ -21,7 +21,7 @@
   <path d="M44 133H83" stroke="#e8e9e4" stroke-width="5" stroke-linecap="round"/>
  </g>
  <path d="M76 531H1524" stroke="#d4d5cd"/>
- <text x="77" y="618" font-size="58" font-weight="600">290<tspan dx="12" font-size="22" font-weight="400" fill="#656860">Demos</tspan></text>
+ <text x="77" y="618" font-size="58" font-weight="600">291<tspan dx="12" font-size="22" font-weight="400" fill="#656860">Demos</tspan></text>
  <text x="447" y="618" font-size="58" font-weight="600">30<tspan dx="12" font-size="22" font-weight="400" fill="#656860">动作分类</tspan></text>
  <text x="817" y="590" font-size="27" font-weight="550">看 · 调 · 用</text>
  <text x="817" y="629" font-size="21" fill="#656860">预览 / 调参 / 复制提示词</text>

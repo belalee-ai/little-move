@@ -2,6 +2,8 @@
 
 日期：2026-10-21。项目：Little Move。
 
+最新增量：新增 291「图片像素扰动」，当前正式目录为 291 项；新增项、帧检查、完整视频与线上回读见 [2026-10-21 更新记录](intake/UPDATES.md)。实现提交 `52da869` 的 [Pages 发布运行](https://github.com/belalee-ai/little-move/actions/runs/39582615553) 已成功。以下 290 项记录保留为首次公开版本的历史验证范围。
+
 ## 本次重新执行
 
 - npm run check：通过。

@@ -1,10 +1,35 @@
 {
   "version": 1,
-  "schedule": "manual",
-  "quantityLimit": null,
   "candidates": [
-    {"key":"image-pixel-distortion","name":"图片像素扰动","collection":"图片与图形","signature":"image-pixel-displacement-pointer","source":"https://tympanus.net/Development/DistortedPixels/index3.html","status":"discovered","license":"未使用上游代码或图片；若采用须单独核验","notes":"搜索结果已读，动态原Demo待验；不能和041文字像素笔画混为一项。"},
-    {"key":"image-scroll-grain","name":"滚动扭曲与颗粒","collection":"图片与图形","signature":"image-scroll-velocity-grain-distortion","source":"https://tympanus.net/Tutorials/ShaderOnScroll/","status":"discovered","license":"待核验，尚未采用","notes":"需要真实滚动速度驱动，并有视频时间轴输入。"},
-    {"key":"magnetic-grid-detail","name":"磁吸立体网格到详情","collection":"布局","signature":"grid-pointer-3d-magnetic-shared-preview","source":"https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/","status":"discovered","license":"待核验，尚未采用","notes":"原文机制已读取。与054详情展开有重叠，优先评估作为054的扩展版本，不自动新增编号。"}
+    {
+      "key": "image-pixel-distortion",
+      "name": "图片像素扰动",
+      "collection": "图片与图形",
+      "signature": "image-pixel-displacement-pointer",
+      "source": "https://tympanus.net/Development/DistortedPixels/index3.html",
+      "status": "discovered",
+      "license": "未使用上游代码或图片；若采用须单独核验",
+      "notes": "搜索结果已读，动态原Demo待验；不能和041文字像素笔画混为一项。"
+    },
+    {
+      "key": "image-scroll-grain",
+      "name": "滚动扭曲与颗粒",
+      "collection": "图片与图形",
+      "signature": "image-scroll-velocity-grain-distortion",
+      "source": "https://tympanus.net/Tutorials/ShaderOnScroll/",
+      "status": "discovered",
+      "license": "待核验，尚未采用",
+      "notes": "需要真实滚动速度驱动，并有视频时间轴输入。"
+    },
+    {
+      "key": "magnetic-grid-detail",
+      "name": "磁吸立体网格到详情",
+      "collection": "布局",
+      "signature": "grid-pointer-3d-magnetic-shared-preview",
+      "source": "https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/",
+      "status": "discovered",
+      "license": "待核验，尚未采用",
+      "notes": "原文机制已读取。与054详情展开有重叠，优先评估作为054的扩展版本，不自动新增编号。"
+    }
   ]
 }

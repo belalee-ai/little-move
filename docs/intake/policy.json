@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "scheduler": {
+    "provider": "codex-desktop-heartbeat",
+    "enabled": true,
+    "intervalDays": 5,
+    "localTime": "10:00",
+    "timeZone": "Asia/Shanghai"
+  },
+  "quantityLimit": null,
+  "minimumAccepted": 0,
+  "publishMode": "auto-publish",
+  "qualityGates": [
+    "distinct-motion-mechanism",
+    "original-source-and-license",
+    "real-browser-interaction",
+    "complete-motion-and-loop-review",
+    "frame-driven-render-review",
+    "relevant-checks-and-build"
+  ]
+}

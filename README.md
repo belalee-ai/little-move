@@ -1,14 +1,18 @@
 # Little Move
 
+![Little Move 项目介绍：先看动效，再说需求。290 个 Demo、30 个动作分类，可预览、调参、复制提示词与选择音效](docs/images/project-intro.svg)
+
+[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![290 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
+
 **先看动效，再说需求。**
 
 一个可以直接打开的动效词典。把“想要那种感觉”变成看得见的参考：**290 个 Demo、30 个动作分类**，覆盖文字、图片与图形、布局、控件和数据。
 
-[**打开在线动效库 ↗**](https://belalee-ai.github.io/little-move/) · [看效果](#效果一览) · [怎么用](#三步找到你要的动作) · [本地运行](docs/GETTING-STARTED.md) · [完整目录](CATALOG.md)
+[**打开在线动效库 ↗**](https://belalee-ai.github.io/little-move/) · [看效果](#效果一览) · [怎么用](#三步找到你要的动作) · [本地运行](docs/GETTING-STARTED.md) · [完整目录](CATALOG.md) · [持续更新](#持续更新)
 
 ![Little Move 在线动效库](docs/images/site-preview.png)
 
-*浏览器中的真实页面。打开链接即可查看，无需注册或安装。*
+*上方头图为项目介绍；这张是在线页面的真实截图。打开链接即可查看，无需注册或安装。*
 
 ## 什么时候用
 
@@ -125,8 +129,22 @@ npm run dev -- --port 3108
 - 自有代码按 [MIT](LICENSE) 提供；字体、摄影和 Remotion 依赖遵循各自许可，详见[许可与素材](docs/LICENSING.md)。
 - 验证范围见[发布检查](docs/RELEASE-CHECK.md)。未声称所有浏览器、设备、参数组合或 Agent 都已完整实测。
 
+## 持续更新
+
+**每 5 天检查一次，验收通过后自动发布。每批不设数量上限，也不设最低新增数。**
+
+| 你关心的事 | 我们如何处理 |
+| --- | --- |
+| 多久更新 | 维护者的定时任务已启用：每 5 天，北京时间 10:00 运行；有合格成果才更新网站。 |
+| 一次增加多少 | 不限量，以机制差异、使用价值和验收结果为准；可以新增、优化旧效果，也可以本轮不收录。 |
+| 怎么保证质量 | 查原始来源与许可 → 对照全库去重 → 制作组件 → 逐项看真实预览、操作与渲染 → 检查构建。 |
+| 什么时候上线 | 通过检查后自动提交到 GitHub，再由 GitHub Pages 发布，并回读线上新增或修改的词条。 |
+| 没通过怎么办 | 保留候选或写明阻塞，不把换色变体、未实现参考或检查失败项计入正式 Demo。 |
+
+定时补充运行在维护者的 Codex App 中，需要本地执行环境与网络可用；克隆仓库不会自动启用任务。完整流程、状态与失败处理见[持续更新安排](docs/intake/UPDATE-POLICY.md)和[补充工作流](docs/intake/WORKFLOW.md)。
+
 ## 参与补充
 
 发现裁切、卡顿、动作不明显，欢迎[提交 Issue](https://github.com/belalee-ai/little-move/issues)，附 **编号、浏览器、复现步骤或录屏**。
 
-建议新动作时，说明适用场景与动作机制；尽量附原始演示链接和素材来源。我们关注动作上的差异，而不只是更换颜色。补充工作流见[收集机制](docs/intake/WORKFLOW.md)，当前手动启动、不设数量上限、没有定时采集任务。
+建议新动作时，说明适用场景与动作机制；尽量附原始演示链接和素材来源。我们关注动作上的差异，而不只是更换颜色。补充工作流见[收集机制](docs/intake/WORKFLOW.md)；也可以手动提前运行一轮，沿用相同的质量门槛。

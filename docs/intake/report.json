@@ -1,8 +1,18 @@
 {
-  "generatedAt": "2026-10-21T01:41:29.128Z",
-  "schedule": "manual",
+  "generatedAt": "2026-10-21T09:23:28.625Z",
+  "schedule": "codex-desktop-heartbeat",
+  "schedulePolicy": {
+    "provider": "codex-desktop-heartbeat",
+    "enabled": true,
+    "intervalDays": 5,
+    "localTime": "10:00",
+    "timeZone": "Asia/Shanghai"
+  },
   "quantityLimit": null,
+  "minimumAccepted": 0,
+  "publishMode": "auto-publish",
   "implemented": 290,
+  "categories": 30,
   "nextCode": "291",
   "candidates": [
     {
@@ -40,5 +50,5 @@
   "counts": {
     "discovered": 3
   },
-  "note": "报告仅验证字段与去重；来源许可、真实预览及实现质量必须另行核验。未修改网站、未自动定时。"
+  "note": "脚本只盘点字段、编号和显式特征；语义去重、来源许可、真实预览和质量验收由维护者执行。配置描述维护安排，不启动调度、不检索网络、不修改网站、不发布。定时运行由维护者的 Codex App 配置。"
 }

@@ -62,4 +62,4 @@ node scripts/refresh-project-intro.mjs
 
 ## GitHub 动态展示的维护
 
-首页动态总览与 24 个不同编号的代表性循环位于 `docs/previews/`，编号和媒体规格见 `manifest.json`，画廊见 [GALLERY.md](../GALLERY.md)。修改画廊所选组件或默认样式时，运行 `node scripts/render-readme-previews.mjs` 重新生成并查看实际 GIF；只重新编码时使用 `--encode-only`。未涉及展示示例的新增无需重渲染全部画廊。动图由现有组件渲染，不另外实现演示动作；原 MP4 留在本地 proof/readme/，不随源码提交。发布后检查 GitHub 实际加载与播放，不能只检查 GIF 文件存在。
+首页动态总览与 25 个不同编号的代表性循环位于 `docs/previews/`，编号和媒体规格见 `manifest.json`，画廊见 [GALLERY.md](../GALLERY.md)。修改画廊所选组件或默认样式时，运行 `node scripts/render-readme-previews.mjs` 重新生成并查看实际 GIF；只重新编码时使用 `--encode-only`。未涉及展示示例的新增无需重渲染全部画廊。动图由现有组件渲染，不另外实现演示动作；原 MP4 留在本地 proof/readme/，不随源码提交。发布后检查 GitHub 实际加载与播放，不能只检查 GIF 文件存在。

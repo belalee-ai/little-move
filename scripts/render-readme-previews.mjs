@@ -10,13 +10,13 @@ import {EFFECTS,DEFAULTS} from '../src/motion-core.js';
 // Only renders the existing components. No alternative motion implementation.
 const selection=[
  ['017','decode','ScrambleText','text'],['060','inflate','Study060','study'],
- ['119','bounce','Demo119','demo'],['134','favorite','Demo134','demo'],
+ ['119','bounce','Demo119','demo'],['044','sway','Study044','study'],
  ['077','race','Demo077','demo'],['101','waveform','Demo101','demo'],
  ['007','gather','ScatterGather','text'],['032','letters','Study032','study'],
  ['063','cells','Study063','study'],['105','punctuation','Demo105','demo'],
  ['110','handwriting','Demo110','demo'],['113','countermask','Demo113','demo'],
  ['117','morph','Demo117','demo'],['123','petals','Demo123','demo'],
- ['052','reorder','Demo052','demo'],['133','hold','Demo133','demo'],
+ ['052','reorder','Demo052','demo'],['046','monogram','Study046','study'],['047','bands','Study047','study'],
  ['140','otp','Demo140','demo'],['146','sort','Demo146','demo'],
  ['076','donut','Demo076','demo'],['151','histogram','Demo151','demo'],
  ['155','sankey','Demo155','demo'],['157','waffle','Demo157','demo'],
@@ -24,11 +24,11 @@ const selection=[
 ];
 const variants={
  '017':{color:'#75415b',background:'#f6eff2',accent:'#ae4d6f'},
- '119':{accent:'#c77435',background:'#fcf3e8'},'134':{accent:'#c45272',background:'#fff0f3'},
+ '119':{accent:'#c77435',background:'#fcf3e8'},
  '101':{accent:'#268684',background:'#edf7f5'},'007':{color:'#3f5e86',background:'#edf3fa',accent:'#739bc6'},
  '105':{accent:'#b95445',background:'#f8efea'},'110':{accent:'#4b7b63',background:'#f0f5ef'},
  '113':{accent:'#4567b4',background:'#edf2fa'},'117':{accent:'#7967b3',background:'#f1eef8'},
- '123':{accent:'#bd6744',background:'#fbf2e9'},'133':{accent:'#276e73',background:'#eaf5f4'},
+ '123':{accent:'#bd6744',background:'#fbf2e9'},
  '140':{accent:'#496ab4',background:'#eff3fc'},'146':{accent:'#a7763d',background:'#fbf5eb'},
  '151':{accent:'#7961ad',background:'#f5eff9'},'155':{accent:'#466d96',background:'#edf3f8'},
  '157':{accent:'#4f8368',background:'#eef6ee'},'166':{accent:'#3f7890',background:'#eff7f8'},
@@ -68,7 +68,7 @@ for(const [code,file,,kind] of selection){
  manifest.push({code,name:meta.name,file:file+'.gif',composition:selection.find(row=>row[0]===code)[2],inputProps:propsFor(meta,kind),durationSeconds:Number(video.format.duration),width:480,height:300,fps:20,bytes:fs.statSync(path.join(out,file+'.gif')).size});
  console.log('Encoded '+file+'.gif');
 }
-const featured=[['decode','017  /  DECODE'],['inflate','060  /  LETTERING'],['bounce','119  /  PHYSICS'],['favorite','134  /  BUTTON'],['race','077  /  RANKING'],['waveform','101  /  SOUND']];
+const featured=[['decode','017  /  DECODE'],['inflate','060  /  LETTERING'],['bounce','119  /  PHYSICS'],['sway','044  /  SCULPTURAL TYPE'],['race','077  /  RANKING'],['waveform','101  /  SOUND']];
 const args=featured.flatMap(([file])=>['-stream_loop','-1','-i',path.join(proof,file+'.mp4')]);
 const font=path.join(root,'public/fonts/ChillRoundF.ttf');
 if(!fs.existsSync(font))throw new Error('Missing bundled header font.');

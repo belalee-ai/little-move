@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:11:17.829Z",
+  "generatedAt": "2026-10-21T13:24:01.905Z",
   "source": "Existing Little Move components with recorded supported color parameters; no image demos; silent full-motion renders. GIFs are display copies at 20fps, not interactive widgets.",
   "previews": [
     {
@@ -79,26 +79,22 @@
       "bytes": 343625
     },
     {
-      "code": "134",
-      "name": "收藏迸发",
-      "file": "favorite.gif",
-      "composition": "Demo134",
+      "code": "044",
+      "name": "钟摆字形",
+      "file": "sway.gif",
+      "composition": "Study044",
       "inputProps": {
-        "demo": "demo-like",
+        "study": "study-swing",
         "speed": 1,
-        "strength": 1,
-        "background": "#fff0f3",
-        "accent": "#c45272",
-        "title": "Light, in motion",
-        "fit": "cover",
-        "images": [],
-        "motionText": "Make room"
+        "scale": 1,
+        "colors": {},
+        "clockSrc": "/type-studies/sculptural-clock.webp"
       },
-      "durationSeconds": 8,
+      "durationSeconds": 2.2,
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 100088
+      "bytes": 904788
     },
     {
       "code": "077",
@@ -354,26 +350,47 @@
       "bytes": 1314398
     },
     {
-      "code": "133",
-      "name": "长按确认",
-      "file": "hold.gif",
-      "composition": "Demo133",
+      "code": "046",
+      "name": "缩写展开与释义",
+      "file": "monogram.gif",
+      "composition": "Study046",
       "inputProps": {
-        "demo": "demo-hold",
+        "study": "study-monogram",
         "speed": 1,
-        "strength": 1,
-        "background": "#eaf5f4",
-        "accent": "#276e73",
-        "title": "Light, in motion",
-        "fit": "cover",
-        "images": [],
-        "motionText": "Make room"
+        "scale": 1,
+        "colors": {},
+        "text": "ForM",
+        "words": [
+          "Fold.",
+          "Observe.",
+          "Rotate.",
+          "Mix."
+        ]
       },
-      "durationSeconds": 8,
+      "durationSeconds": 9,
       "width": 480,
       "height": 300,
       "fps": 20,
-      "bytes": 78327
+      "bytes": 290950
+    },
+    {
+      "code": "047",
+      "name": "反向字带",
+      "file": "bands.gif",
+      "composition": "Study047",
+      "inputProps": {
+        "study": "study-bands",
+        "speed": 1,
+        "scale": 1,
+        "colors": {},
+        "topText": "VECTOR",
+        "bottomText": "RHYTHM"
+      },
+      "durationSeconds": 6,
+      "width": 480,
+      "height": 300,
+      "fps": 20,
+      "bytes": 1139158
     },
     {
       "code": "140",
@@ -564,12 +581,12 @@
     "fps": 20,
     "width": 1200,
     "height": 748,
-    "bytes": 3764112,
+    "bytes": 5236976,
     "codes": [
       "017",
       "060",
       "119",
-      "134",
+      "044",
       "077",
       "101"
     ]

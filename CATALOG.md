@@ -1,6 +1,6 @@
 # Little Move 动效目录
 
-2026-10-21：当前目录 293 项、30 个动作分类，包含可预览的帧驱动实现与简短提示词。source 链接用于参考溯源，不是下载上游原版。来源与许可见 THIRD-PARTY-NOTICES.md；验证范围见 docs/RELEASE-CHECK.md。
+2026-11-04：当前目录 294 项、30 个动作分类，包含可预览的帧驱动实现与简短提示词。source 链接用于参考溯源，不是下载上游原版。来源与许可见 THIRD-PARTY-NOTICES.md；验证范围见 docs/RELEASE-CHECK.md。
 
 | 编号 | ID | 名称 | 分类 | 一句话提示词 | 参考 |
 |---|---|---|---|---|---|
@@ -394,3 +394,9 @@
 | 291 | 图片像素扰动 | 图片与图形 / 图片揭示 | 指针划过图片，局部方块沿运动方向错位采样，留下短暂拖尾；停下或移开后连续复原。 | [原作者 Demo](https://tympanus.net/Development/DistortedPixels/index3.html) |
 | 292 | 滚动弧面与颗粒 | 图片与图形 / 空间层次 | 滚动图片长廊，弧面随速度和方向变化，颗粒随动增强，停止后复原。 | [原作者 Demo](https://tympanus.net/Tutorials/ShaderOnScroll/) |
 | 293 | 磁吸网格聚焦 | 布局 / 场景切换 | 缩略图独立磁吸和倾斜，点击后其余图片错拍撤离，所选图片连续展开，返回原路归位。 | [原作者 Demo](https://tympanus.net/Development/3DGridContentPreview/) |
+
+## 2026-11-04 持续补充
+
+| 编号 | 名称 | 分类 | 一句话提示词 | 参考 |
+| --- | --- | --- | --- | --- |
+| 294 | 方向感知遮罩 | 交互 / 指针反馈 | 遮罩从指针进入的边缘滑入，覆盖卡片；移出时沿实际离开的边缘滑走，快速折返也连续衔接。 | [原作者 Demo](https://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) |

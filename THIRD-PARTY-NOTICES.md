@@ -165,3 +165,7 @@ DIA原站对其工具及输出规定个人探索和教学用途。本批仅链�
 ## 178–290分类补齐（2026-10-21）
 
 新增113个词条为项目内独立绘制，技术参考MDN SVG、Pointer Events与WAI-ARIA APG，不复制第三方Demo代码或品牌素材。84个默认建筑插画为本项目生成的SVG，清单在public/coverage-art/manifest.json，可替换图片。字体沿用本文件已有许可范围和本地字体文件；本次没有新增商业字体、外部照片或音源。语音频带/声像为视觉示意，验证码为本地交互原型。独立实现不等于对现有第三方依赖、原有照片或字体重新授权，沿用原许可要求。
+
+## 2026-11-04 · 294 方向感知遮罩
+
+294「方向感知遮罩」参考 [Codrops 原版 Demo](https://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) 的四边进入/离开机制。2026-11-04 核对 [jquery.hoverdir.js 文件头](https://raw.githubusercontent.com/codrops/DirectionAwareHoverEffect/master/js/jquery.hoverdir.js) 明确标注 MIT。本项以本项目帧函数与 React 独立实现，未分发上游代码、摄影、字体或音频。四幅几何图形由本组件直接绘制；使用系统 Arial 字族，不复制字体文件；音效沿用已有生成素材，没有新增外部资源或依赖。原 Demo 图片许可未单独核验，未带入项目。

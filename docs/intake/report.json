@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:34:41.444Z",
+  "generatedAt": "2026-11-04T10:15:22.803Z",
   "schedule": "codex-desktop-heartbeat",
   "schedulePolicy": {
     "provider": "codex-desktop-heartbeat",
@@ -11,14 +11,15 @@
   "quantityLimit": null,
   "minimumAccepted": 0,
   "publishMode": "auto-publish",
-  "implemented": 293,
+  "implemented": 294,
   "categories": 30,
-  "nextCode": "294",
+  "nextCode": "295",
   "candidates": [],
   "duplicates": [
     "image-pixel-distortion",
     "image-scroll-grain",
-    "magnetic-grid-detail"
+    "magnetic-grid-detail",
+    "direction-aware-overlay"
   ],
   "counts": {},
   "note": "脚本只盘点字段、编号和显式特征；语义去重、来源许可、真实预览和质量验收由维护者执行。配置描述维护安排，不启动调度、不检索网络、不修改网站、不发布。定时运行由维护者的 Codex App 配置。"

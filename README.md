@@ -4,11 +4,11 @@
 
 **先看见动作，再把想法说清楚。**
 
-293 个可预览、可调参的动效 Demo，覆盖文字、图片、布局、控件与数据。
+294 个可预览、可调参的动效 Demo，覆盖文字、图片、布局、控件与数据。
 
 [**打开在线动效库 ↗**](https://belalee-ai.github.io/little-move/)　·　[动态画廊](docs/GALLERY.md)　·　[完整目录](CATALOG.md)　·　[本地运行](docs/GETTING-STARTED.md)
 
-[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![293 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
+[![原创代码 MIT](docs/images/badge-code.svg)](LICENSE) [![294 个 Demo、30 个分类](docs/images/badge-catalog.svg)](CATALOG.md) [![打开在线体验](docs/images/badge-preview.svg)](https://belalee-ai.github.io/little-move/)
 
 [![Little Move 动态总览：乱码解码、充气艺术字、轨迹弹球、钟摆字形、排名竞速和径向频谱](docs/previews/showcase.gif)](https://belalee-ai.github.io/little-move/)
 
@@ -111,14 +111,14 @@ npm run dev -- --port 3108
 
 ## 持续补充，也持续修整
 
-当前 **293 项、30 个动作分类**，每类至少 8 项。[查看 001–293 完整目录](CATALOG.md)。
+当前 **294 项、30 个动作分类**，每类至少 8 项。[查看 001–294 完整目录](CATALOG.md)。
 
 - **每 5 天检查一次**，北京时间 10:00；每批不限数量，也没有最低新增数。
 - 先查原始来源与许可，对照全库去重；相同动作只换颜色或图片不算新增。
 - 逐项操作真实预览、检查完整运动与渲染，通过后自动发布到 GitHub 和网站。
 - 来源、工具或检查不满足条件时保留候选；不会为了更新而凑数量。
 
-最近补充：**291 图片像素扰动 / 292 滚动弧面与颗粒 / 293 磁吸网格聚焦**。[更新与验证记录](docs/intake/UPDATES.md) · [持续更新安排](docs/intake/UPDATE-POLICY.md) · [维护工作流](docs/intake/WORKFLOW.md)
+最近补充：**292 滚动弧面与颗粒 / 293 磁吸网格聚焦 / 294 方向感知遮罩**。[更新与验证记录](docs/intake/UPDATES.md) · [持续更新安排](docs/intake/UPDATE-POLICY.md) · [维护工作流](docs/intake/WORKFLOW.md)
 
 定时补充由维护者的 Codex App 执行，需要本地环境和网络可用。克隆本仓库不会自动创建任务，也不会自动写入你的 GitHub。
 

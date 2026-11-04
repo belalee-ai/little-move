@@ -129,4 +129,5 @@ export const DemoCompositions=()=> <>
  <Composition id="Demo291" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-pixel-field')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
  <Composition id="Demo292" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-scroll-grain')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
  <Composition id="Demo293" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-magnetic-grid')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
+ <Composition id="Demo294" component={DemoMotion} width={800} height={500} fps={60} durationInFrames={480} defaultProps={demoDefaults('demo-direction-overlay')} calculateMetadata={({props})=>({durationInFrames:demoFrames(props)})}/>
 </>;

@@ -1,3 +1,4 @@
+import {DirectionOverlay} from './intake-studies/DirectionOverlay';
 import {ScrollGrainScene,MagneticGridScene} from './intake-studies/Scenes';
 import {PixelFieldScene} from './pixel-field/PixelFieldScene';
 import {CoverageScene} from './coverage/CoverageScene';
@@ -68,6 +69,7 @@ export const DemoMotion:React.FC<DemoProps>=props=>{
  if(APPLE_CONTROL_KEYS.includes(meta.key))scene=<AppleControls p={p} t={t} kind={meta.key}/>;
  if(meta.key==='voice')scene=<VoiceScene p={p} frame={frame} fps={fps}/>;
  if(FEEDBACK_KEYS.includes(meta.key))scene=<FeedbackScene p={p} t={t} kind={meta.key} state={s}/>;
+ if(meta.key==='direction-overlay')scene=<DirectionOverlay p={p} frame={frame} fps={fps}/>;
  if(meta.key==='scroll-grain')scene=<ScrollGrainScene p={p} frame={frame} fps={fps}/>;
  if(meta.key==='magnetic-grid')scene=<MagneticGridScene p={p} frame={frame} fps={fps}/>;
  if(meta.key==='pixel-field')scene=<PixelFieldScene p={p} frame={frame} fps={fps}/>;

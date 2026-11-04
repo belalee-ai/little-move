@@ -42,6 +42,20 @@
       "author": "Manoela Ilic / Codrops",
       "checkedAt": "2026-10-21",
       "article": "https://tympanus.net/codrops/2021/04/21/magnetic-3d-grid-interaction-with-content-preview/"
+    },
+    {
+      "key": "direction-aware-overlay",
+      "name": "方向感知遮罩",
+      "collection": "交互",
+      "signature": "pointer-edge-entry-exit-overlay-slide",
+      "source": "https://tympanus.net/TipsTricks/DirectionAwareHoverEffect/",
+      "status": "accepted",
+      "author": "Codrops",
+      "article": "https://tympanus.net/codrops/2012/04/09/direction-aware-hover-effect-with-css3-and-jquery/",
+      "checkedAt": "2026-11-04",
+      "license": "上游 jquery.hoverdir.js 文件头明确标注 MIT，原始地址：https://raw.githubusercontent.com/codrops/DirectionAwareHoverEffect/master/js/jquery.hoverdir.js 。未下载或复用上游代码、字体、图片及音频；原 Demo 图片许可未单独核验，不得直接带入项目。",
+      "notes": "2026-10-30 仅得到 DOM 证据，未收录。2026-11-04 重新实际操作原 Demo 并捕获完整遮罩与途中状态；对比全部293项，区别244边缘偏移与247整卡翻转。本项独立控制遮罩四边入场/实际出边，快速折返保留位置和速度。294完成真实网页、键盘/触屏、390px、减少动态效果、长标题/浅色对比、完整8秒Remotion视频与阶段帧检查；验证及发布回执见UPDATES.md。",
+      "code": "294"
     }
   ]
 }

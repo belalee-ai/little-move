@@ -169,3 +169,7 @@ DIA原站对其工具及输出规定个人探索和教学用途。本批仅链�
 ## 2026-11-04 · 294 方向感知遮罩
 
 294「方向感知遮罩」参考 [Codrops 原版 Demo](https://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) 的四边进入/离开机制。2026-11-04 核对 [jquery.hoverdir.js 文件头](https://raw.githubusercontent.com/codrops/DirectionAwareHoverEffect/master/js/jquery.hoverdir.js) 明确标注 MIT。本项以本项目帧函数与 React 独立实现，未分发上游代码、摄影、字体或音频。四幅几何图形由本组件直接绘制；使用系统 Arial 字族，不复制字体文件；音效沿用已有生成素材，没有新增外部资源或依赖。原 Demo 图片许可未单独核验，未带入项目。
+
+## 2026-11-09 · 295 滚动显隐导航
+
+295「滚动显隐导航」参考 Nick Williams 的 [Headroom.js 官方演示](https://wicky.nillia.ms/headroom.js/)，上游 [MIT 许可正文](https://github.com/WickyNilliams/headroom.js/blob/master/LICENSE) 已于 2026-11-09 核验。本项目用原生滚动、帧函数与 React 独立实现。图形由组件直接绘制，字形使用系统 Arial，无新增字体文件、图片、音频或依赖。

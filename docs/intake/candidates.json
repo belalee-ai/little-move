@@ -56,6 +56,32 @@
       "license": "上游 jquery.hoverdir.js 文件头明确标注 MIT，原始地址：https://raw.githubusercontent.com/codrops/DirectionAwareHoverEffect/master/js/jquery.hoverdir.js 。未下载或复用上游代码、字体、图片及音频；原 Demo 图片许可未单独核验，不得直接带入项目。",
       "notes": "2026-10-30 仅得到 DOM 证据，未收录。2026-11-04 重新实际操作原 Demo 并捕获完整遮罩与途中状态；对比全部293项，区别244边缘偏移与247整卡翻转。本项独立控制遮罩四边入场/实际出边，快速折返保留位置和速度。294完成真实网页、键盘/触屏、390px、减少动态效果、长标题/浅色对比、完整8秒Remotion视频与阶段帧检查；验证及发布回执见UPDATES.md。",
       "code": "294"
+    },
+    {
+      "key": "scroll-direction-header",
+      "name": "滚动显隐导航",
+      "collection": "交互",
+      "signature": "scroll-direction-hysteresis-fixed-header",
+      "source": "https://wicky.nillia.ms/headroom.js/",
+      "status": "accepted",
+      "author": "Nick Williams",
+      "checkedAt": "2026-11-09",
+      "license": "上游 MIT 许可正文已核验。独立实现，仅参考行为，自绘图形并使用系统字体。",
+      "licenseUrl": "https://github.com/WickyNilliams/headroom.js/blob/master/LICENSE",
+      "notes": "实测下滚后导航离开视口，仍在文章中段反向上滚时归位。区别 242 悬停换项与 292 滚动速度驱动弧面。已收录 295，见 UPDATES.md。",
+      "code": "295"
+    },
+    {
+      "key": "adaptive-caret-height",
+      "name": "自适应文本光标",
+      "collection": "交互",
+      "signature": "pointer-adaptive-caret-line-height",
+      "source": "https://examples.motion.dev/react/cursor",
+      "status": "discovered",
+      "author": "Matt Perry / Motion",
+      "checkedAt": "2026-11-09",
+      "license": "Motion+ 会员示例，本轮未核验复用许可。",
+      "notes": "实际打开只显示会员预览与登录入口，无法移动光标验证字高适配。等待可公开操作且来源明确的原版参考。"
     }
   ]
 }

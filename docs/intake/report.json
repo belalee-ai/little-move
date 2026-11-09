@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T10:15:22.803Z",
+  "generatedAt": "2026-11-09T10:08:16.611Z",
   "schedule": "codex-desktop-heartbeat",
   "schedulePolicy": {
     "provider": "codex-desktop-heartbeat",
@@ -11,16 +11,32 @@
   "quantityLimit": null,
   "minimumAccepted": 0,
   "publishMode": "auto-publish",
-  "implemented": 294,
+  "implemented": 295,
   "categories": 30,
-  "nextCode": "295",
-  "candidates": [],
+  "nextCode": "296",
+  "candidates": [
+    {
+      "key": "adaptive-caret-height",
+      "name": "自适应文本光标",
+      "collection": "交互",
+      "signature": "pointer-adaptive-caret-line-height",
+      "source": "https://examples.motion.dev/react/cursor",
+      "status": "discovered",
+      "author": "Matt Perry / Motion",
+      "checkedAt": "2026-11-09",
+      "license": "Motion+ 会员示例，本轮未核验复用许可。",
+      "notes": "实际打开只显示会员预览与登录入口，无法移动光标验证字高适配。等待可公开操作且来源明确的原版参考。"
+    }
+  ],
   "duplicates": [
     "image-pixel-distortion",
     "image-scroll-grain",
     "magnetic-grid-detail",
-    "direction-aware-overlay"
+    "direction-aware-overlay",
+    "scroll-direction-header"
   ],
-  "counts": {},
+  "counts": {
+    "discovered": 1
+  },
   "note": "脚本只盘点字段、编号和显式特征；语义去重、来源许可、真实预览和质量验收由维护者执行。配置描述维护安排，不启动调度、不检索网络、不修改网站、不发布。定时运行由维护者的 Codex App 配置。"
 }

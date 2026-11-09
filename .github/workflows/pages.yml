@@ -14,6 +14,7 @@ on:
       - 'scripts/check-pixel-field.mjs'
       - 'scripts/check-intake-studies.mjs'
       - 'scripts/check-direction-overlay.mjs'
+      - 'scripts/check-scroll-header.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -39,6 +40,7 @@ jobs:
       - run: node scripts/check-pixel-field.mjs
       - run: node scripts/check-intake-studies.mjs
       - run: node scripts/check-direction-overlay.mjs
+      - run: node scripts/check-scroll-header.mjs
       - run: npm run build
         env:
           DEPLOY_BASE: /little-move/

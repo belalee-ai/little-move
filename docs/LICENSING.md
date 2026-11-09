@@ -27,3 +27,5 @@ Remotion 使用单独的许可，不能把本仓库称为“所有内容均 MIT�
 292、293 的九幅默认建筑示意插画位于 `public/intake-studies/`，生成源为 `scripts/create-intake-study-art.mjs`，属于本项目自有素材。292 参考 Jan Kohlbach 的[滚动变形示例](https://tympanus.net/Tutorials/ShaderOnScroll/)，[上游 MIT 许可](https://github.com/jankohlbach/codrops-shader-on-scroll/blob/master/LICENSE)已于 2026-10-21 读取；293 参考 Manoela Ilic 的[磁吸网格示例](https://tympanus.net/Development/3DGridContentPreview/)，[上游 MIT 许可](https://github.com/codrops/3DGridContentPreview/blob/main/LICENSE)同日读取。两项均独立实现通用动作机制，未分发上游代码、照片、字体或音频；未增加依赖。
 
 294「方向感知遮罩」参考 [Codrops 原版 Demo](https://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) 的四边进入/离开机制。2026-11-04 核对 [jquery.hoverdir.js 文件头](https://raw.githubusercontent.com/codrops/DirectionAwareHoverEffect/master/js/jquery.hoverdir.js) 明确标注 MIT。本项以本项目帧函数与 React 独立实现，未分发上游代码、摄影、字体或音频。四幅几何图形由本组件直接绘制；使用系统 Arial 字族，不复制字体文件；音效沿用已有生成素材，没有新增外部资源或依赖。原 Demo 图片许可未单独核验，未带入项目。
+
+295「滚动显隐导航」参考 Nick Williams 的 [Headroom.js 官方演示](https://wicky.nillia.ms/headroom.js/)，上游 [MIT 许可正文](https://github.com/WickyNilliams/headroom.js/blob/master/LICENSE) 已于 2026-11-09 核验。本项目用原生滚动、帧函数与 React 独立实现。图形由组件直接绘制，字形使用系统 Arial，无新增字体文件、图片、音频或依赖。
